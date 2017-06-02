@@ -4,9 +4,8 @@
 // fs = font-size; pric = pricing
 
 .header-bg-img {
+  background: url('../images/bg-img/bg_1.jpg');
   background-size: cover;
-  background: url('../images/bg-img/bg_1.jpg') no-repeat;
-  padding-top: 8%; // ovo je stavljeno random, ovo se menja kada se ubaci nav
 }
 .main-heading-and-info-text {
   color: $color-font-btn-hdng-para-num;
@@ -35,7 +34,6 @@
   width: 100%;
   
   .images-clients {
-
     img {
       @include marg(0 0 0 12%); 
     }  

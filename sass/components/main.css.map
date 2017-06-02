@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,oCAAoC,CAClC,2BAA4B,CAC1B,UAAU,CAAE,GAAG",
-"sources": ["_media-query.scss"],
-"names": [],
-"file": "main.css"
-}

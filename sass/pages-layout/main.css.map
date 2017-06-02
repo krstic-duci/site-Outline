@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAe,CACb,UAAU,CAAE,0CAA0C",
-"sources": ["_header.scss"],
-"names": [],
-"file": "main.css"
-}

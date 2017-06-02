@@ -3,8 +3,8 @@
 // bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
 // fs = font-size; pric = pricing
 
-//  Elements on html that have same value and props 
-//  are listed in this subsection
+//---- Elements on html that have same value   ----//
+//---- and props are listed in this subsection ----//
 .sections-heading-and-intro-text {
 
   h2 { 
@@ -35,12 +35,17 @@
 
 
 //----------  Features & Products sections  ----------//
-.box-features-section, .box-products-section{
+// for positioning header img
+.box-features-section {
+  position: relative;
+}
+.box-features-section, .box-products-section {
   @include borders($border-width-ft-pdcs-section, $color-border-ft-pdcs-section);
   @include pad(145px 0 115px 0);
   background-color: $color-bg-ft-pdcs-faqs-section;
 }
 .wrapper-divs-features>div, .wrapper-divs-products>div {
+
   a {
     text-decoration: none;
 
@@ -59,9 +64,11 @@
 }
 // Features section
 .wrapper-content-features {
+
   &:hover {
   @include transforms(translate(0, -15px));
   @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+
     i {
       color: $color-font-hover-font-awesome;
     } 
@@ -197,7 +204,7 @@
   }
 
   .num-pricing {
-    @include marg(0 0 0 -12px);
+    @include marg(0 0 0 -3px);
     @include paragraphs($ff-montserrat-regular, $para-num-price-fs, 
     $color-btns-font-awesome-pric-nums, null, null);
   }

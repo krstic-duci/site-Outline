@@ -1,0 +1,57 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+//--------------  Font families  --------------//
+$ff-montserrat-bold:    'Montserrat-Bold', Helvetica, Arial, sans-serif;
+$ff-montserrat-light:   'Montserrat-Light', Helvetica, Arial, sans-serif;
+$ff-montserrat-regular: 'Montserrat-Regular', Helvetica, Arial, sans-serif;
+$ff-opensans-light:     'OpenSans-Light', Helvetica, Arial, sans-serif;
+$ff-opensans-regular:   'OpenSans-Regular', Helvetica, Arial, sans-serif; 
+
+//--- Font (size, letter-spacing, line-height) & border ---//
+
+// Header
+$hdng-h1-fs:                       50px;
+$hdng-h1-lh:                       50px;
+$para-header-fs:                   18px;
+$para-header-lh:                   26px;
+$para-header-letsp:                 1px;
+// Buttons
+$buttons-fs:                       11px;
+$buttons-letsp:                     3px;
+$buttons-lh:                       16px;
+// Sections  
+$hdng-h2-fs:                       45px;
+$hdng-h2-lh:                       60px;
+$border-width-ft-pdcs-section:       1px;
+$hdng-h5-fs:                       12px;
+$hdng-h5-lh:                       13px;
+$hdng-h5-letsp:                     2px;
+$para-intro-text-fs:               18px;
+$para-intro-text-lh:               30px;
+$para-below-h5-ft-pdcs-pric-fs:    16px;
+$para-below-h5-ft-pdcs-pric-lh:    24px;
+$para-below-h5-dsgn-bnft-fs:       16px;
+$para-below-h5-dsgn-bnft-lh:       26px;
+// Sections (crls)  
+$para-crls-text-fs:                30px;
+$para-crls-text-lh:                45px;
+$para-text-name-user-review-fs:    12px;
+$para-text-name-user-review-lh:    26px;
+$para-text-name-user-review-letsp:  3px;
+$num-count-up-fs:                  50px;
+$num-count-up-and-para-below-it-lh:26px;
+$para-below-num-count-up-fs:       13px;
+$para-below-num-count-up-letsp:     4px;
+$img-inside-crls-width-height:    175px;
+$icons-crls-prev-next-fs:          80px;
+// Sections (pricing)
+$para-num-price-fs:                60px;
+$border-width-pric-section:         8px;
+// Sections (accordion)
+$form-input-height:                50px;
+$para-text-accordion-fs:           26px;
+$para-text-accordion-lh:           39px;
+$border-width-form:                 2px;

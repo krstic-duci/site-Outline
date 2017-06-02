@@ -1,0 +1,115 @@
+//-- Adding new margins and paddings on different resolution to be consistent --//
+
+// on lg screen place main-heading-and-text on center /* 1 */
+// on md and lg screen para below h2 in sections must be properly align /* 2 */
+@media screen and (min-width: 992px) {
+  .main-heading-and-info-text {
+    margin-top: 45%; /* 1 */
+  }
+  .sections-heading-and-intro-text {
+
+    p {
+      margin-right: 20.666667%; /* 2 */
+    }
+  }
+}
+
+// on screens < lg place clients img properly aligned with img in header /*3*/
+// on sm & xs screen place iphone white img correctly /* 4 */
+@media screen and (max-width: 991px) {
+  .wrapper-clients-images-header {
+    padding: 30px 0 40px 0; /*3*/
+    
+    .images-clients {
+
+      img {
+        margin:0 0 10% 25%;  /*3*/
+      } 
+    }
+  }
+  .style-img-design-section img.img-responsive {
+    margin: 60px auto 0 auto; /* 4 */
+  } 
+}
+
+// on lg screen place iphone white img and associate divs correctly /* 5 */
+// on lg screen width of input in form must be bigger /*6*/
+@media screen and (min-width: 1200px) {
+  .style-desc-text-icon-design-section {
+    margin-top: 180px; /* 5 */
+  }
+  .style-img-design-section img {
+    margin-top: 100px; /* 5 */
+  }
+  .form-inline .form-group .form-control  {
+    width: 130%; /*6*/
+  }
+}
+// on md screen place iphone white img and associate divs correctly /* 7 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .wrapper-design-cols {
+    margin-top: 100px; /* 7 */
+  }
+}
+// on xs screen font and line height inside carousel must be smaller /*8*/
+// on xs screen img inside carousel must have smaller width and height /*9*/
+// on xs screen h2 inside outline app must have smaller font and line-height /*10*/
+// on xs screen para inside outline app must bre properly aligned /*11*/
+// on xs screen main heading (h1) must have smaller font and line-height /*12*/
+// on xs screen headings section (h2) must have smaller font and line-height /*13*/
+// on xs screen price tags don't have transform ability /*14*/
+@media screen and(max-width: 767px) {
+  .carousel-para-text {
+    font-size: 20px;    /*8*/
+    line-height: 35px;  /*8*/
+  }
+  .carousel-inner {
+
+  img {
+      height: 130px;  /*9*/
+      width: 130px;   /*9*/
+    }
+  }
+
+  .bg-img-outline-app {
+
+    .sections-heading-and-intro-text {
+
+      h2 {
+        font-size: 35px;   /*10*/
+        line-height: 53px; /*10*/
+        margin: 0 10px;    /*11*/
+      }
+    }
+  }
+  .main-heading-and-info-text {
+
+    h1 {
+      font-size: 40px;   /*12*/
+      line-height: 40px; /*12*/
+    }
+  }
+
+  .sections-heading-and-intro-text {
+
+    h2 { 
+      font-size: 35px;   /*13*/
+      line-height: 50px; /*13*/
+    }
+  }
+  .box-pricing-section {
+  @include pad(145px 0 200px 0);
+}
+.container-pricing {
+
+    &:hover {
+      @include transforms(translate(0, 0)); /*14*/
+    }
+  }
+}
+// on sm screen lower the width of input in form /*15*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form-inline .form-group .form-control  {
+    width: 90%; /*15*/
+  }
+}

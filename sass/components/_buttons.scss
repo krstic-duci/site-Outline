@@ -1,0 +1,66 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+.buttons-on-page {
+  margin: 75px 0;
+
+  a {
+    @include transitions(background-color 0.3s linear);
+    @include border-radius(50px);
+    @include marg(20px 0 0 0);
+    @include pad(22px 40px);
+    background-color: $color-btns-font-awesome-pric-nums;
+    color:            $color-font-btn-hdng-para-num;
+    letter-spacing:   $buttons-letsp;
+    line-height:      $buttons-lh;
+    text-decoration: none;
+    font: {
+      family:         $ff-montserrat-regular;
+      size:           $buttons-fs;
+    }
+
+    &:hover {
+      @include transitions(all 0.4s linear);
+      @include box-shadows(0 5px 10px rgba(0, 0, 0, 0.3));
+      text-decoration: none;
+      background-color: $color-bg-btns;
+    }
+  }
+
+
+}
+
+//apple font-awesome in header
+i {
+  @include marg(0 10px 0 0);
+}
+
+.submit-button-form {
+
+  button {
+    @include transitions(background-color 0.3s linear);
+    @include border-radius(50px);
+    @include pad(22px 40px);
+    background-color: $color-bg-btns;
+    border-color:     $color-bg-btns;
+    color:            $color-font-btn-hdng-para-num;
+    letter-spacing:   $buttons-letsp;
+    line-height:      $buttons-lh;
+    text-decoration: none;
+    font: {
+      family:         $ff-montserrat-regular;
+      size:           $buttons-fs;
+    }
+
+    &:hover {
+      @include transitions(all 0.4s linear);
+      @include box-shadows(0 5px 10px rgba(0, 0, 0, 0.3));
+      background-color: $color-bg-btns;
+      border-color:     $color-bg-btns;
+      color:            $color-font-btn-hdng-para-num;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+.header-bg-img {
+  background: url('../images/bg-img/bg_1.jpg') no-repeat;
+  background-size: cover;
+  padding-top: 8%; // ovo je stavljeno random, ovo se menja kada se ubaci nav
+}
+.main-heading-and-info-text {
+  color: $color-font-btn-hdng-para-num;
+
+  h1 {
+    @include headings($ff-montserrat-bold, $hdng-h1-fs, null, $hdng-h1-lh, 
+    null); 
+  }
+
+  p {
+    @include paragraphs($ff-opensans-regular, $para-header-fs, null,
+    $para-header-lh, $para-header-letsp);
+  }
+}
+.iphones-over-header-img {
+
+  img{
+    float: right;
+  }
+}
+.wrapper-clients-images-header {
+  background-color: $color-bg-clients-crls-form;
+  width: 100%;
+  @include pad(30px 0);
+  
+  .images-clients {
+    img {
+      @include marg(0 0 0 12%); 
+    }  
+  }
+}

@@ -58,7 +58,7 @@
        -o-transition: $params;
           transition: $params;
 }
-// Placeholder color
+// Placeholder form color
 @mixin placeholder($color) {
   &::-webkit-input-placeholder {
     color: $color;

@@ -24,31 +24,28 @@
   .wrapper-clients-images-header {
     padding: 30px 0 40px 0; /*4*/
     
-    // .images-clients {
+    .images-clients {
 
-    //   div {
-    //     margin:0 0 2% 4%;  /*4*/
-    //   } 
-    // }
+      div {
+          /*4*/
+      } 
+    }
   }
   .style-img-design-section img.img-responsive {
-    margin: 60px 0; /*5*/
+    margin: 60px auto; /*5*/
   } 
 }
 @media screen and (min-width: 480px) and (max-width: 630px) {
   .wrapper-clients-images-header {
     padding: 30px 0 40px 0; /*4*/
     
-    // .images-clients {
+    .images-clients {
 
-    //   div {
-    //     margin:0 0 2% 2%;  /*4*/
-    //   } 
-    // }
+      div {
+          /*4*/
+      } 
+    }
   }
-  .style-img-design-section img.img-responsive {
-    margin: 60px 5px; /*5*/
-  } 
 }
 // on lg screen place iphone white img and associate divs correctly /*6*/
 // on lg screen width of input in form must be bigger /*7*/
@@ -77,7 +74,7 @@
 // on xs screen headings section (h2) must have smaller font and line-height /*14*/
 // on xs screen price tags don't have transform ability /*15*/
 // on xs screen header img must be placed & positioned correctly /*16*/
-@media screen and(max-width: 767px) {
+@media screen and (max-width: 767px) {
   .carousel-para-text {
     font-size: 20px;    /*9*/
     line-height: 35px;  /*9*/
@@ -143,12 +140,14 @@
   }
 }
 // on 512px screen divs in benefits must be placed & positioned correctly /*19*/
-@media screen and (min-width: 481px) and (max-width: 512px) {
+@media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
     margin-top: 14px; /*19*/  
   }
 }
-// on xxs (<= 480px) clients images need to be aligned with above header img /*20*/
-@media screen and (max-width: 479px) {
-  
+// on scren < 480px img in carousel must be in new row
+@media screen and (max-width: 480px) {
+  .carousel-inner img.img-responsive.img-circle {
+    margin: 10px auto;
+  }
 }

@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./sass/global.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css">
+  <!-- AOS css -->
+  <link rel="stylesheet" href="./libs/aos/css/aos.css">
+  <!-- FancyBox (gallery img) -->
+    <link rel="stylesheet" href="./libs/fancy-box/css/jquery.fancybox.min.css">
 </head>  
 <body>
 
@@ -27,13 +31,19 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="main-heading-and-info-text">
-              <h1>We take your business to the next level.</h1>
-              <p>
+              <h1 data-aos="fade-up" data-aos-easing="linear" 
+              data-aos-duration="700">
+                We take your business to the next level.
+              </h1>
+              <p data-aos="fade-up" data-aos-easing="linear" 
+              data-aos-delay="800" data-aos-duration="700">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
                 they live in Bookmarksgrove.
               </p>
-              <div class="buttons-on-page">
+              <div class="buttons-on-page" data-aos="fade-up" 
+              data-aos-easing="linear" data-aos-delay="1400" 
+              data-aos-duration="700">
                 <a href="#" role="button">
                   <i class="fa fa-apple" aria-hidden="true"></i>
                   SEE ON APPSTORE
@@ -41,10 +51,12 @@
               </div><!-- /div.buttons-on-page -->
             </div><!-- /div.main-heading-and-info-text -->
           </div>
-          <div class="col-md-6 col-sm-12 iphones-over-header-img">
+          <div class="col-md-6 col-sm-12 iphones-over-header-img" 
+          data-aos="fade-up" data-aos-duration="700"
+          data-aos-easing="linear" data-aos-delay="1400">
             <img src="./images/iphone_6_3.png" alt="two black iphones" 
             class="img-responsive">
-          </div>
+          </div><!-- /div.iphones-over-header-img -->
         </div><!-- /div.row -->
       </div><!-- /div.container -->
     </div><!-- /div.header-bg-img -->
@@ -52,23 +64,30 @@
       <div class="container">
         <div class="row">
           <div class="images-clients">
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6" data-aos="fade-right" 
+            data-aos-easing="ease-in-out" data-aos-duration="800">
               <img src="./images/clients/client_1.png" class="img-responsive" 
               alt="square company logo">
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6" data-aos="fade-right" 
+            data-aos-easing="ease-in-out" data-aos-duration="800" 
+            data-aos-delay="600">
               <img src="./images/clients/client_2.png" class="img-responsive" 
               alt="airbnb company logo">
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6" data-aos="fade-right" 
+            data-aos-easing="ease-in-out" data-aos-duration="800" 
+            data-aos-delay="800">
               <img src="./images/clients/client_3.png" class="img-responsive" 
               alt="evernote company logo">
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6" data-aos="fade-right" 
+            data-aos-easing="ease-in-out" data-aos-duration="800" 
+            data-aos-delay="1000">
               <img src="./images/clients/client_4.png" class="img-responsive" 
               alt="pinterest company logo">
             </div>
-          </div>
+          </div><!-- /div.images-clients -->
         </div><!-- /div.row -->
       </div><!-- /div.container-->
     </div><!-- /div.wrapper-clients-images-header -->
@@ -81,9 +100,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="sections-heading-and-intro-text text-center">
-            <h2>Explore amazing features</h2>
+            <h2 data-aos="fade-zoom-in" data-aos-easing="linear" 
+              data-aos-duration="600" data-aos-offset="80">
+              Explore amazing features
+            </h2>
             <div class="col-md-offset-2">
-              <p>
+              <p data-aos="fade-zoom-in" data-aos-easing="linear" 
+              data-aos-duration="600" data-aos-delay="400" data-aos-offset="100">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
                 they live in Bookmarksgrove right at the coast of the Semantics, 
@@ -93,7 +116,9 @@
           </div><!-- /div.sections-heading-and-intro-text -->
         </div>
         <article class="wrapper-divs-features">
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
+          <div class="col-md-3 col-xs-6 custom-col-xxs" 
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800">
             <a href="#">
               <div class="wrapper-content-features">
                 <i class="fa fa-telegram fa-5x" aria-hidden="true"></i>
@@ -103,7 +128,9 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="300">
             <a href="#">
               <div class="wrapper-content-features">
                 <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
@@ -113,7 +140,9 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="500">
             <a href="#">
             <div class="wrapper-content-features">
               <i class="fa fa-eye fa-5x" aria-hidden="true"></i>
@@ -123,7 +152,9 @@
             </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
+          <div class="col-md-3 col-xs-6 custom-col-xxs" 
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="700">
             <a href="#">
               <div class="wrapper-content-features">
                 <i class="fa fa-cloud-download fa-5x" aria-hidden="true"></i>
@@ -135,7 +166,8 @@
           </div>
         </article>
       </div><!-- /div.row -->
-      <p class="buttons-on-page text-center">
+      <p class="buttons-on-page text-center" data-aos="fade-up" 
+      data-aos-easing="linear" data-aos-duration="800" data-aos-delay="700">
         <a href="#" role="button">
           VIEW ALL FEATURES
         </a>
@@ -150,9 +182,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="sections-heading-and-intro-text text-center">
-            <h2>Better design</h2>
+            <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+              Better design
+            </h2>
             <div class="col-md-offset-2">
-              <p>
+              <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+              data-aos-delay="500" data-aos-offset="0">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
                 they live in Bookmarksgrove right at the coast of the Semantics, 
@@ -166,8 +202,11 @@
     <div class="container wrapper-design-cols">
       <div class="row">
         <article class="text-center">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 custom-col-xxs">
-            <div class="style-desc-text-icon-design-section">
+          <div class="col-md-4 col-xs-6 custom-col-xxs">
+            <div class="style-desc-text-icon-design-section"
+            data-aos="fade-left" data-aos-anchor-placement="col-lg-4" 
+            data-aos-duration="700" data-aos-delay="600" 
+            data-aos-easing="ease-in-out-cubic">
               <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
               <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
               <p class="style-para-below-h5-dsgn-bnft">
@@ -182,16 +221,19 @@
               </p> 
             </div><!-- /div.style-desc-icon-text-design-section -->
           </div><!-- /div.custom-col-xxs -->
-          <div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-6 
-          col-xs-6 custom-col-xxs">
-            <div class="style-desc-text-icon-design-section">
+          <div class="col-md-4 col-md-push-4 col-xs-6 custom-col-xxs">
+            <div class="style-desc-text-icon-design-section"            
+            data-aos="fade-right" data-aos-anchor-placement="col-lg-4" 
+            data-aos-duration="700" data-aos-delay="600" 
+            data-aos-easing="ease-in-out-cubic">
               <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
               <h5 class="style-all-h5">POWERFUL DESIGN</h5>
               <p class="style-para-below-h5-dsgn-bnft">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts.
               </p>
-              <i class="fa fa-users fa-3x" id="style-i-on-xs" aria-hidden="true"></i>
+              <i class="fa fa-users fa-3x" id="style-i-on-xs" 
+              aria-hidden="true"></i>
               <h5 class="style-all-h5">USER COLLABORATION</h5>
               <p class="style-para-below-h5-dsgn-bnft">
                 Far far away, behind the word mountains, far from the countries 
@@ -199,8 +241,9 @@
               </p>
             </div><!-- /div.style-desc-icon-text-design-section -->
           </div><!-- /div.custom-col-xxs -->
-          <div class="col-lg-4 col-lg-pull-4 col-md-4 col-md-pull-4 col-sm-12
-          col-xs-12">
+          <div class="col-md-4 col-md-pull-4 col-xs-12"
+          data-aos="fade-up" data-aos-duration="700" 
+          data-aos-easing="ease-in-out-cubic">
             <div class="style-img-design-section text-center">
               <img src="./images/iphone_blank_2.png" class="img-responsive" 
               alt="white iphone">
@@ -218,7 +261,8 @@
       <div class="container">
         <div class="row">
           <div id="carousel-example-generic" class="carousel slide" 
-          data-ride="carousel" data-pause="null">
+          data-ride="carousel" data-pause="null" data-aos="fade-up" 
+          data-aos-duration="700" data-aos-easing="linear">
   
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -298,7 +342,7 @@
               role="button" data-slide="next">
                 <span class="icon-next" 
                 aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only" >Next</span>
               </a>
             </div><!-- /div.carousel-controls -->
           </div><!-- /div.carousel-slide -->
@@ -308,17 +352,19 @@
     <article class="wrapper-numbers-and-bg-img">
       <div class="container">
         <div class="row">
-          <div class="wrapper-count-numbers text-center">
+          <div class="wrapper-count-numbers text-center"
+          data-aos="fade-up" data-aos-duration="800" 
+          data-aos-easing="ease-in-out-back">
             <div class="col-md-4 col-sm-12 col-xs-12">
-              <p class="number-count-up">28</p>
+              <p class="number-count-up num-one">28</p>
               <p class="desc-text-below-num-count">CUSTOMERS</p>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
-              <p class="number-count-up">57</p>
+              <p class="number-count-up num-two">57</p>
               <p class="desc-text-below-num-count">COMPLETED APPS</p>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
-              <p class="number-count-up">34023</p>
+              <p class="number-count-up num-three">34023</p>
               <p class="desc-text-below-num-count">DOWNLOADS</p>
             </div>
           </div>
@@ -334,9 +380,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="sections-heading-and-intro-text text-center">
-            <h2>Other awesome Apps</h2>
+            <h2 data-aos="fade-zoom-in" data-aos-easing="linear" 
+            data-aos-duration="600" data-aos-offset="80">
+                Other awesome Apps
+              </h2>
             <div class="col-md-offset-2">
-              <p>
+              <p data-aos="fade-zoom-in" data-aos-easing="linear" 
+              data-aos-duration="600" data-aos-delay="400" data-aos-offset="100">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts.
               </p> 
@@ -344,8 +394,11 @@
           </div><!-- /div.sections-heading-and-intro-text -->
         </div>   
         <article class="wrapper-divs-products">
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
-            <a href="#">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800">
+            <a href="./images/product-img/product_1.jpg" 
+            data-fancybox="gallery">
               <div class="wrapper-content-img-products">
                 <img src="./images/product-img/product_1.jpg" 
                 class="img-responsive" alt="two phones on ground">
@@ -355,8 +408,11 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
-            <a href="#">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="300">
+            <a href="./images/product-img/product_2.jpg" 
+            data-fancybox="gallery">
               <div class="wrapper-content-img-products">
                 <img src="./images/product-img/product_2.jpg" 
                 class="img-responsive" alt="male holding the watch">
@@ -366,8 +422,11 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
-            <a href="#">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="500">
+            <a href="./images/product-img/product_3.jpg" 
+            data-fancybox="gallery">
               <div class="wrapper-content-img-products">
                 <img src="./images/product-img/product_3.jpg" 
                 class="img-responsive" alt="male holding Samsung phone">
@@ -377,8 +436,11 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 custom-col-xxs">
-            <a href="#">
+          <div class="col-md-3 col-xs-6 custom-col-xxs"
+          data-aos="fade-up" data-aos-easing="ease-in-out" 
+          data-aos-duration="800" data-aos-delay="700">
+            <a href="./images/product-img/product_4.jpg" 
+            data-fancybox="gallery">
               <div class="wrapper-content-img-products">
                 <img src="./images/product-img/product_4.jpg" 
                 class="img-responsive" alt="black headphones">
@@ -390,7 +452,8 @@
           </div>
         </article>
       </div><!-- /div.row -->
-      <p class="buttons-on-page text-center">
+      <p class="buttons-on-page text-center" data-aos="fade-up" 
+      data-aos-easing="linear" data-aos-duration="800" data-aos-delay="700">
         <a href="#" role="button">
           VIEW ALL PRODUCTS
         </a>
@@ -406,9 +469,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="sections-heading-and-intro-text text-center">
-              <h2>Benefits of this App</h2>
+              <h2 data-aos="fade-zoom-in" data-aos-easing="linear" 
+              data-aos-duration="600" data-aos-offset="80">
+                Benefits of this App
+              </h2>
               <div class="col-md-offset-2">
-                <p>
+                <p data-aos="fade-zoom-in" data-aos-easing="linear" 
+              data-aos-duration="600" data-aos-delay="400" data-aos-offset="100">
                   Far far away, behind the word mountains, far from the 
                   countries Vokalia and Consonantia, there live the blind texts.
                 </p> 
@@ -417,7 +484,8 @@
           </div>
           <article class="wrapper-benefits-cols text-center">
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
                 <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -427,7 +495,9 @@
               </div><!-- /div.style-desc-text-icon-benefits-section -->
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+              data-aos-delay="300">
                 <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -437,7 +507,9 @@
               </div><!-- /div.style-desc-text-icon-benefits-section -->
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+              data-aos-delay="500">
                 <i class="fa fa-anchor fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -447,7 +519,9 @@
               </div><!-- /div.style-desc-text-icon-benefits-section -->
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+              data-aos-delay="700">
                 <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -457,7 +531,9 @@
               </div><!-- /div.style-desc-text-icon-benefits-section -->
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+              data-aos-delay="900">
                 <i class="fa fa-gift fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -467,7 +543,9 @@
               </div><!-- /div.style-desc-text-icon-benefits-section -->
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="style-desc-text-icon-benefits-section">
+              <div class="style-desc-text-icon-benefits-section"
+              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+              data-aos-delay="1100">
                 <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
                 <h5 class="style-all-h5">CROSS PLATFORM SUPPORT</h5>
                 <p class="style-para-below-h5-dsgn-bnft">
@@ -486,9 +564,13 @@
            <div class="col-md-12">
              <div class="row">
                <div class="sections-heading-and-intro-text text-center">
-                 <h2>Try Outline App today!</h2>
+                 <h2 data-aos="fade-up" data-aos-easing="linear" 
+                 data-aos-duration="700">
+                  Try Outline App today!
+                </h2>
                  <div class="col-md-offset-2">
-                   <p>
+                   <p data-aos="fade-up" data-aos-easing="linear" 
+                   data-aos-duration="700" data-aos-delay="300">
                     Far far away, behind the word mountains, far from the 
                     countries Vokalia and Consonantia, there live the blind texts.
                    </p> 
@@ -497,7 +579,8 @@
              </div><!-- /div.row -->
            </div>  
         </div><!-- /div.row -->
-      <p class="buttons-on-page text-center button-benefits">
+      <p class="buttons-on-page text-center button-benefits" data-aos="fade-up" 
+      data-aos-easing="linear" data-aos-duration="700" data-aos-delay="500">
         <a href="#" role="button">GET STARTED!</a>
       </p>
       </div><!-- /div.container -->
@@ -511,9 +594,13 @@
        <div class="row">
         <div class="col-md-12">
           <div class="sections-heading-and-intro-text text-center">
-            <h2>Plans built for every one</h2>
+            <h2 data-aos="fade-up" data-aos-duration="700" 
+            data-aos-easing="ease-in">
+              Plans built for every one
+            </h2>
             <div class="col-md-offset-2">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="700" 
+              data-aos-easing="ease-in" data-aos-delay="300">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts.
               </p> 
@@ -521,7 +608,8 @@
           </div><!-- /div.sections-heading-and-intro-text -->
         </div>
         <div class="col-md-3 col-sm-12 text-center">
-          <div class="container-pricing">
+          <div class="container-pricing" data-aos="fade-up" 
+          data-aos-duration="700" data-aos-easing="ease-in" data-aos-delay="500">
             <a href="#" class="links-pricing-section">
               <i class="fa fa-usd fa-4x" aria-hidden="true"></i>
               <span class="num-pricing">1</span>
@@ -530,10 +618,11 @@
               <p class="style-para-below-h5-ft-pdcs-pric">Far far away behind 
               the word mountains</p>
             </a>
-          </div>
+          </div><!-- /div.container-pricing -->
         </div>
         <div class="col-md-3 col-sm-12 text-center">
-          <div class="container-pricing">
+          <div class="container-pricing" data-aos="fade-up" 
+          data-aos-duration="700" data-aos-easing="ease-in" data-aos-delay="700">
             <a href="#" class="links-pricing-section">
               <i class="fa fa-usd fa-4x" aria-hidden="true"></i>
               <span class="num-pricing">25</span>
@@ -542,10 +631,11 @@
               <p class="style-para-below-h5-ft-pdcs-pric">Far far away behind 
             the word mountains</p> 
             </a>
-          </div>
+          </div><!-- /div.container-pricing -->
         </div>
         <div class="col-md-3 col-sm-12 text-center">
-          <div class="container-pricing" id="well-marked-price">
+          <div class="container-pricing" id="well-marked-price" data-aos="fade-up" 
+          data-aos-duration="700" data-aos-easing="ease-in" data-aos-delay="900">
             <a href="#" class="links-pricing-section">
               <i class="fa fa-usd fa-4x" aria-hidden="true"></i>
               <span class="num-pricing">59</span>
@@ -554,10 +644,11 @@
               <p class="style-para-below-h5-ft-pdcs-pric">Far far away behind 
               the word mountains</p>
             </a>
-          </div>
+          </div><!-- /div.container-pricing -->
         </div>
         <div class="col-md-3 col-sm-12 text-center">
-          <div class="container-pricing">
+          <div class="container-pricing" data-aos="fade-up" 
+          data-aos-duration="700" data-aos-easing="ease-in" data-aos-delay="1100">
             <a href="#" class="links-pricing-section">
               <i class="fa fa-usd fa-4x" aria-hidden="true"></i>
               <span class="num-pricing">125</span>
@@ -566,7 +657,7 @@
               <p class="style-para-below-h5-ft-pdcs-pric">Far far away behind 
               the word mountains</p>
             </a>
-          </div>
+          </div><!-- /div.container-pricing -->
         </div>
        </div><!-- /div.row -->
      </div><!-- /div.container --> 
@@ -580,9 +671,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="sections-heading-and-intro-text text-center">
-              <h2>Frequently Ask Questions</h2>
+              <h2 data-aos="fade-zoom-in" data-aos-duration="700" 
+              data-aos-easing="ease-in-out-cubic">
+                Frequently Ask Questions
+              </h2>
               <div class="col-md-offset-2">
-                <p>
+                <p data-aos="fade-zoom-in" data-aos-duration="700" 
+              data-aos-easing="ease-in-out-cubic" data-aos-delay="400">
                   Far far away, behind the word mountains, far from the countries 
                   Vokalia and Consonantia, there live the blind texts.
                 </p> 
@@ -595,18 +690,23 @@
         <div class="panel-group" id="accordion" role="tablist" 
          aria-multiselectable="true">
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingOne" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="600">
               <a href="#" role="button" class="panel-title">
                 <p data-toggle="collapse" data-parent="#accordion" 
                 href="#collapseOne" aria-expanded="true" 
                 aria-controls="collapseOne">
                   What is Outline?
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <i class="fa fa-caret-up" aria-hidden="true"></i>
                 </p>
               </a>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" 
-            role="tabpanel" aria-labelledby="headingOne">
+            role="tabpanel" aria-labelledby="headingOne"
+            data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="700">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -622,7 +722,10 @@
             </div><!-- /div.panel-collapse collapse in -->
           </div><!-- /div.panel panel-default -->
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingTwo" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="800">
               <a href="#" role="button" class="panel-title">
                 <p class="collapsed" data-toggle="collapse" 
                 data-parent="#accordion" href="#collapseTwo" 
@@ -633,7 +736,9 @@
               </a>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" 
-            role="tabpanel" aria-labelledby="headingTwo">
+            role="tabpanel" aria-labelledby="headingTwo"
+            data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="900">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -649,7 +754,10 @@
             </div><!-- /div.panel-collapse collapse -->
           </div><!-- /div.panel panel-default -->
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingThree" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1000">
               <a href="#" role="button" class="panel-title">
                 <p class="collapsed" data-toggle="collapse"  
                 data-parent="#accordion" href="#collapseThree" 
@@ -660,7 +768,10 @@
               </a>
             </div>
             <div id="collapseThree" class="panel-collapse collapse" 
-            role="tabpanel" aria-labelledby="headingThree">
+            role="tabpanel" aria-labelledby="headingThree"
+            data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1100">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -676,7 +787,10 @@
             </div><!-- /div.panel-collapse collapse -->
           </div><!-- /div.panel panel-default -->
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingFour" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1200">
               <a href="#" role="button" class="panel-title">
                 <p class="collapsed" data-toggle="collapse"  
                 data-parent="#accordion" href="#collapseThree" 
@@ -687,7 +801,10 @@
               </a>
             </div>
             <div id="collapseFour" class="panel-collapse collapse" 
-            role="tabpanel" aria-labelledby="headingFour">
+            role="tabpanel" aria-labelledby="headingFour"
+            data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1300">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -703,7 +820,10 @@
             </div><!-- /div.panel-collapse collapse -->
           </div><!-- /div.panel panel-default -->
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFive">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingFive" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1400">
               <a href="#" role="button" class="panel-title">
                 <p class="collapsed" data-toggle="collapse" 
                 data-parent="#accordion" href="#collapseFive" 
@@ -714,7 +834,9 @@
               </a>
             </div>
             <div id="collapseFive" class="panel-collapse collapse" 
-            role="tabpanel" aria-labelledby="headingThree">
+            role="tabpanel" aria-labelledby="headingThree" 
+            data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1500">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -730,7 +852,10 @@
             </div><!-- /div.panel-collapse collapse -->
           </div><!-- /div.panel panel-default -->
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingSix">
+            <div class="panel-heading add-white-color-to-panel-heading" 
+            role="tab" id="headingSix" data-aos="fade-up" 
+            data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1600">
               <a href="#" role="button" class="panel-title">
                 <p class="collapsed" data-toggle="collapse" 
                 data-parent="#accordion" href="#collapseSix" 
@@ -741,7 +866,9 @@
               </a>
             </div>
             <div id="collapseSix" class="panel-collapse collapse" 
-            role="tabpanel" aria-labelledby="headingThree">
+            role="tabpanel" aria-labelledby="headingThree" 
+            data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in" 
+            data-aos-delay="1700">
               <div class="panel-body">
                 Far far away, behind the word mountains, far from the countries 
                 Vokalia and Consonantia, there live the blind texts. Separated 
@@ -759,13 +886,13 @@
         </div><!-- /div.panel-group -->
       </div><!-- /div.container -->
     </article>
-
     <article class="form-inside-faqs">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="row">
-              <form class="form-inline">
+              <form class="form-inline" data-aos="fade-up" 
+              data-aos-duration="600" data-aos-easing="linear">
                 <div class="col-md-3 col-sm-3">
                   <div class="form-group">
                     <input type="password" class="form-control" id="first-name" 
@@ -864,5 +991,11 @@
   
   <!-- my JS file -->
   <script src="javascript/script.js"></script>
+  
+  <!-- AOS js -->
+  <script src="./libs/aos/js/aos.js"></script>
+
+  <!-- FancyBox JS (galery img) -->
+  <script src="./libs/fancy-box/js/jquery.fancybox.min.js"></script>
 </body>  
 </html>

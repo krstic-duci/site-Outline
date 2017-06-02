@@ -10,6 +10,7 @@
 
     i {
       float: right;
+      font-size: $caret-up-down-fs;
     }
   }
 }
@@ -30,8 +31,17 @@
   }
 }
 .panel-collapse.collapse.in {
-  
+
   .panel-body {
     border: none;
   }  
+}
+// call this class via JQ when user click on caret up (down)
+.transform-on-click-caret {
+  @include transitions(all 0.4s ease-in-out);
+  @include transforms(rotate(180deg));
+}
+// call this class via JQ to add bg color to panel-heading
+.add-white-color-to-panel-heading {
+  background-color: #fff;/**/
 }

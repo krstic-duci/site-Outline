@@ -32,9 +32,9 @@ ul.list-unstyled {
 }
 .copyright {
   @include marg(20px 0);
-  color: #fff;/**/
+  color: $color-font-btn-hdng-para-num;
 }
 .copyright-text {
   @include marg(20px 0);
-  color: #fff;/**/
+  color: $color-font-btn-hdng-para-num;
 }

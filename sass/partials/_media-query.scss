@@ -17,36 +17,6 @@
     bottom: -140px;/*3*/
   }
 }
-
-// on screens < lg place clients img properly aligned with img in header /*4*/
-// on sm & xs screen place iphone white img correctly /*5*/
-@media screen and (max-width: 991px) {
-  .wrapper-clients-images-header {
-    padding: 30px 0 40px 0; /*4*/
-    
-    .images-clients {
-
-      div {
-          /*4*/
-      } 
-    }
-  }
-  .style-img-design-section img.img-responsive {
-    margin: 60px auto; /*5*/
-  } 
-}
-@media screen and (min-width: 480px) and (max-width: 630px) {
-  .wrapper-clients-images-header {
-    padding: 30px 0 40px 0; /*4*/
-    
-    .images-clients {
-
-      div {
-          /*4*/
-      } 
-    }
-  }
-}
 // on lg screen place iphone white img and associate divs correctly /*6*/
 // on lg screen width of input in form must be bigger /*7*/
 @media screen and (min-width: 1200px) {
@@ -59,12 +29,22 @@
   .form-inline .form-group .form-control  {
     width: 130%; /*7*/
   }
+  /*ovde treba ubaciti za clients img*/
+  .images-clients {
+    margin-left: 55px;
+
+    img {
+      padding: 20px 0;
+    }
+  }
 }
 // on md screen place iphone white img and associate divs correctly /*8*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper-design-cols {
     margin-top: 100px; /*8*/
   }
+  /*ovde treba ubaciti za clients img*/
+
 }
 // on xs screen font and line height inside carousel must be smaller /*9*/
 // on xs screen img inside carousel must have smaller width and height /*10*/
@@ -127,6 +107,8 @@
     margin-top: -100px;/*16*/
     bottom: -140px; /*16*/
   }
+  /*ovde treba ubaciti za clients img*/
+
 }
 // on sm screen lower the width of input in form /*17*/
 //on sm screen header img must be placed & positioned correctly /*18*/
@@ -138,6 +120,8 @@
     margin-top: -480px;/*18*/
     bottom: -480px;/*18*/
   }
+  /*ovde treba ubaciti za clients img*/
+
 }
 // on 512px screen divs in benefits must be placed & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {
@@ -145,7 +129,7 @@
     margin-top: 14px; /*19*/  
   }
 }
-// on scren < 480px img in carousel must be in new row
+// on screen < 480px img in carousel must be in new row
 @media screen and (max-width: 480px) {
   .carousel-inner img.img-responsive.img-circle {
     margin: 10px auto;

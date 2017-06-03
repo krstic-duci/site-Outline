@@ -3,8 +3,10 @@
 // bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
 // fs = font-size; pric = pricing
 
-//---- Elements on html that have same value   ----//
-//---- and props are listed in this subsection ----//
+//------- Elements on index.html that have same ---------//
+//---- value and props are listed in this subsection ----//
+
+// Style h2 and para text into all sections
 .sections-heading-and-intro-text {
 
   h2 { 
@@ -20,14 +22,17 @@
     margin-bottom: 50px;
   }
 }
+// Style all h5 on page
 .style-all-h5 {
   @include headings($ff-montserrat-bold, $hdng-h5-fs, 
   $color-font-hdngs-sections, $hdng-h5-lh, $hdng-h5-letsp);
 }
+// Style para that comes right after h5
 .style-para-below-h5-ft-pdcs-pric {
   @include paragraphs($ff-opensans-regular, $para-below-h5-ft-pdcs-pric-fs,
   $color-font-divs-in-sections, $para-below-h5-ft-pdcs-pric-lh, null);
 }
+// Style para that comes right after h5
 .style-para-below-h5-dsgn-bnft {
   @include paragraphs($ff-opensans-regular, $para-below-h5-dsgn-bnft-fs, 
   $color-font-para, $para-below-h5-dsgn-bnft-lh, null);
@@ -35,10 +40,12 @@
 
 
 //----------  Features & Products sections  ----------//
-// for positioning header img
+
+// For positioning header img
 .box-features-section {
   position: relative;
 }
+// Style for same elems in Features & Products section
 .box-features-section, .box-products-section {
   @include borders($border-width-ft-pdcs-section, $color-border-ft-pdcs-section);
   @include pad(145px 0 115px 0);
@@ -47,10 +54,8 @@
 .wrapper-divs-features>div, .wrapper-divs-products>div {
 
   a {
-    text-decoration: none;
 
     &:hover {
-
       text-decoration: none;
     }
 
@@ -70,8 +75,8 @@
 .wrapper-content-features {
 
   &:hover {
-  @include transforms(translate(0, -15px));
-  @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+    @include transforms(translate(0, -15px));
+    @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
 
     i {
       color: $color-font-hover-font-awesome;
@@ -92,17 +97,17 @@
 }
 // Product section
 .wrapper-content-img-products {
-  //padding is set to 0 so img can fit nicely to div
+  // Padding is set to 0 so img can fit nicely into div
   @include pad(0);
   overflow: hidden;
 
   &:hover {
-  @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
-  @include transforms(translate(0, -15px));
+    @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+    @include transforms(translate(0, -15px));
   
     img {
-        @include transforms(scale(1.1));
-        @include transitions(all 0.5s linear);
+      @include transforms(scale(1.1));
+      @include transitions(all 0.5s linear);
     } 
   }
 
@@ -115,6 +120,8 @@
   } 
 }
 //----------  Design & Benefits section  ----------//
+
+// Style for same elems in Design & Benefits section
 .box-design-section, .box-heading-and-desc-text-benefits-section,
 .bg-img-outline-app {
   @include pad(145px 0);
@@ -131,7 +138,7 @@
     @include marg (0 0 15px 0);
   }
 }
-// Benefit section
+// Benefits section
 .bg-img-outline-app {
   background: url('../images/bg-img/bg_3.jpg');
   background-attachment: fixed;
@@ -159,6 +166,7 @@
   @include marg(0 0 60px 0);
 }
 //----------  Testimonies section  ----------//
+
 .wrapper-numbers-and-bg-img {
   @include pad(120px 0);
   background: url('../images/bg-img/bg_2.jpg') no-repeat;
@@ -180,6 +188,7 @@
   }
 }
 //----------  Pricing section  ----------//
+
 .box-pricing-section {
   @include pad(145px 0 200px 0);
 }
@@ -196,7 +205,6 @@
   }
 
   .links-pricing-section {
-  text-decoration: none;
   
     &:hover {
       text-decoration: none;
@@ -229,6 +237,7 @@
   }
 }
 //----------  FAQs section  ----------//
+
 .box-faqs-section {
   background-color: $color-bg-ft-pdcs-faqs-section;
 }

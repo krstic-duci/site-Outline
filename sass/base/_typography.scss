@@ -4,6 +4,7 @@
 // fs = font-size; pric = pricing
 
 //--------------  Font families  --------------//
+
 $ff-montserrat-bold:    'Montserrat-Bold', Helvetica, Arial, sans-serif;
 $ff-montserrat-light:   'Montserrat-Light', Helvetica, Arial, sans-serif;
 $ff-montserrat-regular: 'Montserrat-Regular', Helvetica, Arial, sans-serif;
@@ -57,8 +58,10 @@ $para-num-price-fs:                60px;
 $border-width-pric-section:         8px;
 // Sections (accordion)
 $form-input-height:                50px;
-$para-text-accordion-fs:           26px;
-$para-text-accordion-lh:           39px;
+$hdng-text-accordion-fs:           26px;
+$hdng-text-accordion-lh:           39px;
+$para-text-accordion-fs:           16px;
+$para-text-accordion-lh:           30px;
 $border-width-form:                 2px;
 $caret-up-down-fs:                 40px;
 //Footer

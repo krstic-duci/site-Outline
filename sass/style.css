@@ -120,6 +120,30 @@
       border-color: #ffffff;
       color: #ffffff; }
 
+.outline-logo-nav {
+  font-family: "Montserrat-Bold", Helvetica, Arial, sans-serif; }
+  .outline-logo-nav a {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    padding: 0 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 26px; }
+    .outline-logo-nav a:hover {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      text-decoration: none;
+      border-color: #E2E2E2;
+      color: #E2E2E2; }
+
 .carousel-inner img {
   height: 175px;
   width: 175px; }
@@ -202,7 +226,7 @@ ol.carousel-indicators {
 
 .panel-title p i {
   float: right;
-  font-size: 40px; }
+  font-size: 30px; }
 
 .panel.panel-default {
   border: none;
@@ -246,6 +270,39 @@ ol.carousel-indicators {
   background-color: #fff; }
 
 /*-------------  Pages Layout  --------------*/
+#nav-side {
+  position: absolute;
+  right: -30%;
+  background: white;
+  z-index: 100;
+  width: 30%;
+  height: 100%;
+  top: 10%; }
+
+.navigation-top {
+  margin: 40px 0; }
+  .navigation-top .submit-button-form {
+    float: left; }
+  .navigation-top .menu-button {
+    float: right;
+    margin-top: -20px;
+    /**/ }
+    .navigation-top .menu-button a {
+      color: #fff;
+      font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      /**/
+      line-height: 26px;
+      /**/
+      letter-spacing: 4px;
+      /**/ }
+      .navigation-top .menu-button a:hover {
+        text-decoration: none; }
+
+.show-hide-nav-sidebar {
+  right: 0%;
+  transition: all 1s linear; }
+
 .header-bg-img {
   background: url("../images/bg-img/bg_1.jpg");
   background-size: cover;

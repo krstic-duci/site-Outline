@@ -64,7 +64,6 @@
   @include marg(20px 0 0 0);
   font-family: $ff-montserrat-light;
   
-
   a {
     @include transitions(all 0.3s linear);
     @include pad(10px 15px);
@@ -79,6 +78,26 @@
       text-decoration: none;
       border-color: $color-border-form;
       color: $color-font-btn-hdng-para-num;
+    }
+  }
+}
+.outline-logo-nav {
+  font-family: $ff-montserrat-bold;
+
+  a {
+  @include transitions(all 0.3s linear);
+  @include pad(0 10px);
+  border: $buttons-outline-logo-border-width solid $color-font-btn-hdng-para-num;
+  color: $color-font-btn-hdng-para-num;
+  font-size: $buttons-outline-logo-fs;
+  letter-spacing: $buttons-outline-logo-letsp;
+  line-height: $buttons-outline-logo-lh;
+
+  &:hover {
+    @include transitions(all 0.3s linear);
+    text-decoration: none;
+    border-color: $color-btns-nav;
+    color: $color-btns-nav;
     }
   }
 }

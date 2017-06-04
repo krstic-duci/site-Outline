@@ -1,21 +1,18 @@
 /*
-Error: Undefined variable: "$color-font-btn-hdng-para-num".
-        on line 11 of site-Outline/sass/pages-layout/_header.scss
-        from line 5 of site-Outline/sass/pages-layout/main.scss
-
-6: 
-7: // Include layout for sections //
-8: @import "_all-sections.scss";
-9: 
-10: // Include layout for footer //
-11: @import "_footer.scss";
+Error: Undefined mixin 'marg'.
+        on line 17 of site-Outline/sass/pages-layout/_navigation.scss, in `marg'
+        from line 17 of site-Outline/sass/pages-layout/_navigation.scss
+        from line 2 of site-Outline/sass/pages-layout/main.scss
 
 Backtrace:
-site-Outline/sass/pages-layout/_header.scss:11
-site-Outline/sass/pages-layout/main.scss:5
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+site-Outline/sass/pages-layout/_navigation.scss:17:in `marg'
+site-Outline/sass/pages-layout/_navigation.scss:17
+site-Outline/sass/pages-layout/main.scss:2
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -75,4 +72,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-font-btn-hdng-para-num\".\A         on line 11 of site-Outline/sass/pages-layout/_header.scss\A         from line 5 of site-Outline/sass/pages-layout/main.scss\A \A 6: \A 7: // Include layout for sections //\A 8: @import \"_all-sections.scss\";\A 9: \A 10: // Include layout for footer //\A 11: @import \"_footer.scss\";"; }
+  content: "Error: Undefined mixin 'marg'.\A         on line 17 of site-Outline/sass/pages-layout/_navigation.scss, in `marg'\A         from line 17 of site-Outline/sass/pages-layout/_navigation.scss\A         from line 2 of site-Outline/sass/pages-layout/main.scss"; }

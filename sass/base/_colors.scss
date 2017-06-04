@@ -18,6 +18,7 @@ $_grey:           #919191;
 $_snowish:        #fafafa;
 $_white-50:       rgba(255,255,255,0.5);
 $_white:          #ffffff;
+$_white-light:    #E2E2E2;
 
 // Background colors
 $color-bg-btns:                      $_green-light;
@@ -32,6 +33,7 @@ $color-border-ft-pdcs-section:  $_gray-light;
 
 // Text(paragraphs), buttons, headings, numbers
 $color-btns-font-awesome-pric-nums:     $_cyan-moderate;
+$color-btns-nav:                        $_white-light;
 $color-crls-indicators-form:            $_white-50; 
 $color-font-divs-in-sections:           $_grey;
 $color-font-hover-font-awesome:         $_green-light-50;

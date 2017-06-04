@@ -1,69 +1,102 @@
-//-- Adding new margins and paddings on different resolution to be consistent --//
+//--Adding new margins and paddings on different resolution to be consistent--//
 
-// on lg screen place main-heading-and-text on center /*1*/
-// on md and lg screen para below h2 in sections must be properly align /* 2 */
-// on md and lg screen header img must be places correctly /*3*/
+//on lg place iphone white img and associate divs correctly (design section) //1
+//on lg width of input in form must be bigger (faq section)                  //2
+//on lg screen place clients images correctly (header)                       //3
+@media screen and (min-width: 1200px) {
+  .style-desc-text-icon-design-section {
+    margin-top: 180px; //1
+  }
+  .style-img-design-section img {
+    margin-top: 100px; //1
+  }
+  .form-inline .form-group .form-control  {
+    width: 130%;       //2
+  }
+  .images-clients {
+    margin-left: 55px; //3
+
+    img {
+      padding: 20px 0; //3
+    }
+  }
+}
+//on lg place iphone white img and associate divs correctly (design section) //4
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .wrapper-design-cols {
+    margin-top: 100px; //4
+  }
+}
+//on md & lg place main heading & text on center (header)                    //5
+//on md & lg place para below h2 in sections must be properly align          //6
+//on md & lg header img must be placed & positioned correctly                //7
 @media screen and (min-width: 992px) {
   .main-heading-and-info-text {
-    margin-top: 45%; /*1*/
+    margin-top: 45%;            //5
   }
   .sections-heading-and-intro-text {
 
     p {
-      margin-right: 20.666667%; /* 2 */
+      margin-right: 20.666667%; //6
     }
   }
   .iphones-over-header-img {
-    bottom: -140px;/*3*/
+    bottom: -140px;             //7
   }
 }
-// on lg screen place iphone white img and associate divs correctly /*6*/
-// on lg screen width of input in form must be bigger /*7*/
-@media screen and (min-width: 1200px) {
-  .style-desc-text-icon-design-section {
-    margin-top: 180px; /*6*/
-  }
-  .style-img-design-section img {
-    margin-top: 100px; /*6*/
-  }
+//on sm lower the width of input in form (faq section)                       //8
+//on sm header img must be placed & positioned correctly                     //9
+//on sm reset body padding, because of the footer                           //10
+//on sm footer is in normal document flow                                   //11
+//on sm img white iphone need to be centered on page                        //12
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .form-inline .form-group .form-control  {
-    width: 130%; /*7*/
+    width: 90%;                //8
   }
-  /*ovde treba ubaciti za clients img*/
-  .images-clients {
-    margin-left: 55px;
+  .iphones-over-header-img {
+    margin-top: -480px;        //9
+    bottom: -480px;            //9
+  }
+  body {
+    padding: 0;               //10     
+  }
+  footer {
+    bottom: 0;                //11
+    height: auto;             //11
+    padding: 80px 0;          //11
+    position: static;         //11
+    width: 100%;              //11
+    z-index: 1;               //11
+  }
+  .style-img-design-section {
 
     img {
-      padding: 20px 0;
+      margin: 0 auto;         //12
     }
   }
 }
-// on md screen place iphone white img and associate divs correctly /*8*/
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .wrapper-design-cols {
-    margin-top: 100px; /*8*/
-  }
-  /*ovde treba ubaciti za clients img*/
-
-}
-// on xs screen font and line height inside carousel must be smaller /*9*/
-// on xs screen img inside carousel must have smaller width and height /*10*/
-// on xs screen h2 inside outline app must have smaller font and line-height /*11*/
-// on xs screen para inside outline app must bre properly aligned /*12*/
-// on xs screen main heading (h1) must have smaller font and line-height /*13*/
-// on xs screen headings section (h2) must have smaller font and line-height /*14*/
-// on xs screen price tags don't have transform ability /*15*/
-// on xs screen header img must be placed & positioned correctly /*16*/
+//on xs font and line height inside carousel must be smaller                //13
+//on xs img inside carousel must have smaller width and height              //14
+//on xs h2 inside outline app must have smaller font and line-height        //15
+//on xs para inside outline app must bre properly aligned                   //16
+//on xs main heading (h1) must have smaller font and line-height            //17
+//on xs headings section (h2) must have smaller font and line-height        //18
+//on xs price tags don't have transform ability                             //19
+//on xs header img must be placed & positioned correctly                    //20
+//on xs img white iphone need to be centered on page                        //21
+//on xs accordion heading must have smaller font-size and line-height       //22
+//on xs footer is in normal document flow                                   //23
+//on xs all sections & footer must have smaller padding and margin          //24
 @media screen and (max-width: 767px) {
   .carousel-para-text {
-    font-size: 20px;    /*9*/
-    line-height: 35px;  /*9*/
+    font-size: 20px;                      //13
+    line-height: 35px;                    //13
   }
   .carousel-inner {
 
   img {
-      height: 130px;  /*10*/
-      width: 130px;   /*10*/
+      height: 130px;                      //14
+      width: 130px;                       //14
     }
   }
 
@@ -72,56 +105,79 @@
     .sections-heading-and-intro-text {
 
       h2 {
-        font-size: 35px;   /*11*/
-        line-height: 53px; /*11*/
-        margin: 0 10px;    /*12*/
+        font-size: 35px;                  //15
+        line-height: 53px;                //15
+        margin: 0 10px;                   //16
       }
     }
   }
   .main-heading-and-info-text {
 
     h1 {
-      font-size: 40px;   /*13*/
-      line-height: 40px; /*13*/
+      font-size: 40px;                    //17
+      line-height: 40px;                  //17
     }
   }
 
   .sections-heading-and-intro-text {
 
     h2 { 
-      font-size: 35px;   /*14*/
-      line-height: 50px; /*14*/
+      font-size: 35px;                    //18
+      line-height: 50px;                  //18
     }
   }
   .container-pricing {
 
     &:hover {
-      -webkit-transform: translate(0, 0); /*15*/
-         -moz-transform: translate(0, 0); /*15*/
-          -ms-transform: translate(0, 0); /*15*/
-           -o-transform: translate(0, 0); /*15*/
-              transform: translate(0, 0); /*15*/
+      -webkit-transform: translate(0, 0); //19
+         -moz-transform: translate(0, 0); //19
+          -ms-transform: translate(0, 0); //19
+           -o-transform: translate(0, 0); //19
+              transform: translate(0, 0); //19
     }
   }
   .iphones-over-header-img {
-    margin-top: -100px;/*16*/
-    bottom: -140px; /*16*/
+    margin-top: -100px;                   //20
+    bottom: -140px;                       //20
   }
-  /*ovde treba ubaciti za clients img*/
+  .style-img-design-section {
+    img {
+      margin: 0 auto;                     //21
+    }
+  }
+  .panel.panel-default .panel-heading {
 
-}
-// on sm screen lower the width of input in form /*17*/
-//on sm screen header img must be placed & positioned correctly /*18*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .form-inline .form-group .form-control  {
-    width: 90%; /*17*/
+    a {
+      font-size: 20px;                    //22           
+      line-height: 30px;                  //22
+      text-decoration: none;              //22
+    }
   }
-  .iphones-over-header-img {
-    margin-top: -480px;/*18*/
-    bottom: -480px;/*18*/
+  body {
+    padding: 0;                           //23
   }
-  /*ovde treba ubaciti za clients img*/
-
+  footer {
+    bottom: 0;                            //23
+    height: auto;                         //23
+    margin-top: -80px;                    //23
+    padding: 50px 0;                      //23
+    position: static;                     //23
+    width: 100%;                          //23
+    z-index: 1;                           //23
+  }
+  .box-testimonies-section {              //24
+    margin-bottom: -80px;                                     
+  }
+  .box-heading-and-desc-text-benefits-section, 
+  .wrapper-accordion-and-faqs-section {
+    padding: 0 0 80px 0;                  //24
+  }
+  .box-features-section, .box-design-section, .box-testimonies-section,
+  .box-products-section, .box-benefits-section,.box-pricing-section, 
+  .box-faqs-section {
+    padding: 80px 0;                      //24
+  }
+  //ovde treba ubaciti za clients img
 }
 // on 512px screen divs in benefits must be placed & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {

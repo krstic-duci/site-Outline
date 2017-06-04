@@ -32,7 +32,7 @@
       }
 
     &:hover {
-      text-decoration: none;
+      text-decoration: none
     }
 
   }
@@ -45,4 +45,11 @@
     @include paragraphs($ff-opensans-regular, $para-text-accordion-fs, 
     $color-font-para-accordion, $para-text-accordion-lh, null);
   }  
+}
+.transform-caret {
+  @include transitions(all 0.3s linear);
+  @include transforms(rotate(180deg));
+}
+.bg-color-panel-heading {
+  background-color: #fff;
 }

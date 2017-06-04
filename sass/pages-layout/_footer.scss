@@ -5,6 +5,11 @@
 
 footer {
   @include pad(180px 0 200px 0);
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  height: 584px;
   font-family: $ff-opensans-light;
   background-color: $color-bg-wrapper-footer;
 

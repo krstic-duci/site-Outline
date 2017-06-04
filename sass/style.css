@@ -230,10 +230,26 @@ ol.carousel-indicators {
   color: #444444;
   line-height: 30px; }
 
+.transform-caret {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.bg-color-panel-heading {
+  background-color: #fff; }
+
 /*-------------  Pages Layout  --------------*/
 .header-bg-img {
   background: url("../images/bg-img/bg_1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  z-index: 1; }
 
 .main-heading-and-info-text {
   color: #ffffff; }
@@ -258,6 +274,9 @@ ol.carousel-indicators {
   background-color: #4fd2c2;
   position: relative;
   width: 100%; }
+
+body {
+  padding: 0 0 584px 0; }
 
 .sections-heading-and-intro-text h2 {
   font-family: "Montserrat-Bold", Helvetica, Arial, sans-serif;
@@ -298,7 +317,8 @@ ol.carousel-indicators {
   border-bottom-color: #f2f2f2;
   border-bottom-style: solid;
   padding: 145px 0 115px 0;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  z-index: 1; }
 
 .wrapper-divs-features > div a:hover, .wrapper-divs-products > div a:hover {
   text-decoration: none; }
@@ -364,7 +384,9 @@ ol.carousel-indicators {
 
 .box-design-section, .box-heading-and-desc-text-benefits-section,
 .bg-img-outline-app {
-  padding: 145px 0; }
+  padding: 145px 0;
+  background-color: #ffffff;
+  z-index: 1; }
 
 .style-desc-text-icon-design-section i, .style-desc-text-icon-benefits-section i {
   color: #4fd2c2;
@@ -392,7 +414,8 @@ ol.carousel-indicators {
 .wrapper-numbers-and-bg-img {
   padding: 120px 0;
   background: url("../images/bg-img/bg_2.jpg") no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  z-index: 1; }
 
 .wrapper-count-numbers {
   color: #ffffff;
@@ -407,7 +430,9 @@ ol.carousel-indicators {
     padding: 20px 0 0 0; }
 
 .box-pricing-section {
-  padding: 145px 0 200px 0; }
+  padding: 145px 0 200px 0;
+  background-color: #ffffff;
+  z-index: 1; }
 
 .container-pricing {
   padding: 48px 0;
@@ -463,7 +488,8 @@ ol.carousel-indicators {
     transform: translate(0, 0); }
 
 .box-faqs-section {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  z-index: 1; }
 
 .form-inside-faqs {
   padding: 60px 0;
@@ -485,6 +511,11 @@ ol.carousel-indicators {
 
 footer {
   padding: 180px 0 200px 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  height: 584px;
   font-family: "OpenSans-Light", Helvetica, Arial, sans-serif;
   background-color: #3b3d40; }
   footer h6 {
@@ -514,106 +545,117 @@ ul.list-unstyled li {
   color: #ffffff; }
 
 /*-------------  Media Query  ---------------*/
-@media screen and (min-width: 992px) {
-  .main-heading-and-info-text {
-    margin-top: 45%;
-    /*1*/ }
-
-  .sections-heading-and-intro-text p {
-    margin-right: 20.666667%;
-    /* 2 */ }
-
-  .iphones-over-header-img {
-    bottom: -140px;
-    /*3*/ } }
 @media screen and (min-width: 1200px) {
   .style-desc-text-icon-design-section {
-    margin-top: 180px;
-    /*6*/ }
+    margin-top: 180px; }
 
   .style-img-design-section img {
-    margin-top: 100px;
-    /*6*/ }
+    margin-top: 100px; }
 
   .form-inline .form-group .form-control {
-    width: 130%;
-    /*7*/ }
+    width: 130%; }
 
-  /*ovde treba ubaciti za clients img*/
   .images-clients {
     margin-left: 55px; }
     .images-clients img {
       padding: 20px 0; } }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper-design-cols {
-    margin-top: 100px;
-    /*8*/ }
+    margin-top: 100px; } }
+@media screen and (min-width: 992px) {
+  .main-heading-and-info-text {
+    margin-top: 45%; }
 
-  /*ovde treba ubaciti za clients img*/ }
-@media screen and (max-width: 767px) {
-  .carousel-para-text {
-    font-size: 20px;
-    /*9*/
-    line-height: 35px;
-    /*9*/ }
-
-  .carousel-inner img {
-    height: 130px;
-    /*10*/
-    width: 130px;
-    /*10*/ }
-
-  .bg-img-outline-app .sections-heading-and-intro-text h2 {
-    font-size: 35px;
-    /*11*/
-    line-height: 53px;
-    /*11*/
-    margin: 0 10px;
-    /*12*/ }
-
-  .main-heading-and-info-text h1 {
-    font-size: 40px;
-    /*13*/
-    line-height: 40px;
-    /*13*/ }
-
-  .sections-heading-and-intro-text h2 {
-    font-size: 35px;
-    /*14*/
-    line-height: 50px;
-    /*14*/ }
-
-  .container-pricing:hover {
-    -webkit-transform: translate(0, 0);
-    /*15*/
-    -moz-transform: translate(0, 0);
-    /*15*/
-    -ms-transform: translate(0, 0);
-    /*15*/
-    -o-transform: translate(0, 0);
-    /*15*/
-    transform: translate(0, 0);
-    /*15*/ }
+  .sections-heading-and-intro-text p {
+    margin-right: 20.666667%; }
 
   .iphones-over-header-img {
-    margin-top: -100px;
-    /*16*/
-    bottom: -140px;
-    /*16*/ }
-
-  /*ovde treba ubaciti za clients img*/ }
+    bottom: -140px; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form-inline .form-group .form-control {
-    width: 90%;
-    /*17*/ }
+    width: 90%; }
 
   .iphones-over-header-img {
     margin-top: -480px;
-    /*18*/
-    bottom: -480px;
-    /*18*/ }
+    bottom: -480px; }
 
-  /*ovde treba ubaciti za clients img*/ }
+  body {
+    padding: 0; }
+
+  footer {
+    bottom: 0;
+    height: auto;
+    padding: 80px 0;
+    position: static;
+    width: 100%;
+    z-index: 1; }
+
+  .style-img-design-section img {
+    margin: 0 auto; } }
+@media screen and (max-width: 767px) {
+  .carousel-para-text {
+    font-size: 20px;
+    line-height: 35px; }
+
+  .carousel-inner img {
+    height: 130px;
+    width: 130px; }
+
+  .bg-img-outline-app .sections-heading-and-intro-text h2 {
+    font-size: 35px;
+    line-height: 53px;
+    margin: 0 10px; }
+
+  .main-heading-and-info-text h1 {
+    font-size: 40px;
+    line-height: 40px; }
+
+  .sections-heading-and-intro-text h2 {
+    font-size: 35px;
+    line-height: 50px; }
+
+  .container-pricing:hover {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+
+  .iphones-over-header-img {
+    margin-top: -100px;
+    bottom: -140px; }
+
+  .style-img-design-section img {
+    margin: 0 auto; }
+
+  .panel.panel-default .panel-heading a {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none; }
+
+  body {
+    padding: 0; }
+
+  footer {
+    bottom: 0;
+    height: auto;
+    margin-top: -80px;
+    padding: 50px 0;
+    position: static;
+    width: 100%;
+    z-index: 1; }
+
+  .box-testimonies-section {
+    margin-bottom: -80px; }
+
+  .box-heading-and-desc-text-benefits-section,
+  .wrapper-accordion-and-faqs-section {
+    padding: 0 0 80px 0; }
+
+  .box-features-section, .box-design-section, .box-testimonies-section,
+  .box-products-section, .box-benefits-section, .box-pricing-section,
+  .box-faqs-section {
+    padding: 80px 0; } }
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
     margin-top: 14px;

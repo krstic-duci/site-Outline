@@ -6,6 +6,11 @@
 //------- Elements on index.html that have same ---------//
 //---- value and props are listed in this subsection ----//
 
+//must set body padding-bottom to 584px so footer can be seen nicely
+body {
+  @include pad(0 0 584px 0);
+}
+
 // Style h2 and para text into all sections
 .sections-heading-and-intro-text {
 
@@ -50,6 +55,7 @@
   @include borders($border-width-ft-pdcs-section, $color-border-ft-pdcs-section);
   @include pad(145px 0 115px 0);
   background-color: $color-bg-ft-pdcs-faqs-section;
+  z-index: 1;
 }
 .wrapper-divs-features>div, .wrapper-divs-products>div {
 
@@ -125,6 +131,8 @@
 .box-design-section, .box-heading-and-desc-text-benefits-section,
 .bg-img-outline-app {
   @include pad(145px 0);
+  background-color: $color-bg-wrapper-divs-ft-pric-faqs;
+  z-index: 1;
 }
 .style-desc-text-icon-design-section, .style-desc-text-icon-benefits-section {
   
@@ -171,6 +179,7 @@
   @include pad(120px 0);
   background: url('../images/bg-img/bg_2.jpg') no-repeat;
   background-attachment: fixed;
+  z-index: 1;
 }
 .wrapper-count-numbers {
   color: $color-font-btn-hdng-para-num;
@@ -191,6 +200,8 @@
 
 .box-pricing-section {
   @include pad(145px 0 200px 0);
+  background-color: $color-bg-wrapper-divs-ft-pric-faqs;
+  z-index: 1;
 }
 .container-pricing {
   @include pad(48px 0);
@@ -240,6 +251,7 @@
 
 .box-faqs-section {
   background-color: $color-bg-ft-pdcs-faqs-section;
+  z-index: 1;
 }
 .form-inside-faqs {
   @include pad(60px 0);

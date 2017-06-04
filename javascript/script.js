@@ -24,7 +24,6 @@ $(function () {
       .removeClass('col-xs-12').addClass('col-xs-8');
     }
 
- 
   });
 });
 

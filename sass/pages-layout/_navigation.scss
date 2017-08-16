@@ -2,7 +2,8 @@
 // crls = carousel ; ft = features; pdcs = products; dsgn = design; 
 // bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
 // fs = font-size; pric = pricing
-
+@import "../modules/main";
+@import "../base/main";
 #nav-side {
     position: absolute;
     right: -30%;

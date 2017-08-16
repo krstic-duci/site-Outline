@@ -43,12 +43,14 @@
   .iphones-over-header-img {
     bottom: -140px;             //7
   }
+
 }
 //on sm lower the width of input in form (faq section)                       //8
 //on sm header img must be placed & positioned correctly                     //9
 //on sm reset body padding, because of the footer                           //10
 //on sm footer is in normal document flow                                   //11
 //on sm img white iphone need to be centered on page                        //12
+//
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form-inline .form-group .form-control  {
     width: 90%;                //8
@@ -74,6 +76,10 @@
       margin: 0 auto;         //12
     }
   }
+  .company-img {
+    margin-bottom: 20px;  /**/
+    display: inline-block !important;/**/
+  }
 }
 //on xs font and line height inside carousel must be smaller                //13
 //on xs img inside carousel must have smaller width and height              //14
@@ -87,6 +93,7 @@
 //on xs accordion heading must have smaller font-size and line-height       //22
 //on xs footer is in normal document flow                                   //23
 //on xs all sections & footer must have smaller padding and margin          //24
+//
 @media screen and (max-width: 767px) {
   .carousel-para-text {
     font-size: 20px;                      //13
@@ -177,7 +184,10 @@
   .box-faqs-section {
     padding: 80px 0;                      //24
   }
-  //ovde treba ubaciti za clients img
+  .company-img {
+    margin-bottom: 30px;  /**/
+    display: inline-block !important;/**/
+  }
 }
 // on 512px screen divs in benefits must be placed & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {

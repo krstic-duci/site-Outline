@@ -24,6 +24,12 @@
   src: url("../fonts/open-sans/OpenSans-Light.ttf"); }
 /*----------  Typography & Colors  ----------*/
 /*-----------------  Mixins   ---------------*/
+/*-----------------  Utility  ---------------*/
+.text_decoration-none {
+  text-decoration: none; }
+  .text_decoration-none:focus {
+    text-decoration: none; }
+
 /*----------  Buttons & Carousel ------------*/
 .buttons-on-page {
   margin: 75px 0; }
@@ -648,7 +654,13 @@ ul.list-unstyled li {
     z-index: 1; }
 
   .style-img-design-section img {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .company-img {
+    margin-bottom: 20px;
+    /**/
+    display: inline-block !important;
+    /**/ } }
 @media screen and (max-width: 767px) {
   .carousel-para-text {
     font-size: 20px;
@@ -712,7 +724,13 @@ ul.list-unstyled li {
   .box-features-section, .box-design-section, .box-testimonies-section,
   .box-products-section, .box-benefits-section, .box-pricing-section,
   .box-faqs-section {
-    padding: 80px 0; } }
+    padding: 80px 0; }
+
+  .company-img {
+    margin-bottom: 30px;
+    /**/
+    display: inline-block !important;
+    /**/ } }
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
     margin-top: 14px;

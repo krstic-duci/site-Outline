@@ -1,7 +1,5 @@
 $(function () {
 
-
-
   // on 480px make new breakpoints
   $(window).resize(function() {
     if($(window).width() < 463) {
@@ -27,10 +25,6 @@ $(function () {
     }
 
   });
-
- 
-
-
 
 });
 

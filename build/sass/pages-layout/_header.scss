@@ -29,7 +29,7 @@
   }
 }
 .wrapper-clients-images-header {
-  @include pad(30px);/*odavde poceti sa problemom clients img*/
+  @include pad(30px);
   background-color: $color-bg-clients-crls-form;
   position: relative;
   width: 100%;

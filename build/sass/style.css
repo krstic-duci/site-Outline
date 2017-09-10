@@ -27,6 +27,8 @@
 /*-----------------  Utility  ---------------*/
 .text_decoration-none {
   text-decoration: none; }
+  .text_decoration-none:hover {
+    text-decoration: none; }
   .text_decoration-none:focus {
     text-decoration: none; }
 
@@ -276,13 +278,13 @@ ol.carousel-indicators {
 
 /*-------------  Pages Layout  --------------*/
 #nav-side {
-  position: absolute;
-  right: -30%;
+  position: fixed;
+  right: -15%;
   background: white;
   z-index: 100;
-  width: 30%;
+  width: 15%;
   height: 100%;
-  top: 10%; }
+  top: 0; }
 
 .navigation-top {
   margin: 40px 0; }
@@ -301,12 +303,60 @@ ol.carousel-indicators {
       /**/
       letter-spacing: 4px;
       /**/ }
-      .navigation-top .menu-button a:hover {
-        text-decoration: none; }
+
+ul.list-unstyled.sidebar hr {
+  margin: 5px; }
+ul.list-unstyled.sidebar li {
+  margin: 40px 0px 0 15px; }
+ul.list-unstyled.sidebar a {
+  font-size: 20px;
+  /**/
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #454545;
+  /**/ }
+  ul.list-unstyled.sidebar a:hover {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
 
 .show-hide-nav-sidebar {
   right: 0%;
   transition: all 1s linear; }
+
+.icons-side-menu .text-in-side-menu {
+  margin: 15px;
+  color: #454545; }
+.icons-side-menu i {
+  display: inline-block;
+  padding: 15px; }
+  .icons-side-menu i:hover {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: #30beac;
+    /**/ }
+
+.slow-move-right {
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -ms-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear; }
+
+.slow-move-left {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
 
 .header-bg-img {
   background: url("../images/bg-img/bg_1.jpg");
@@ -339,6 +389,9 @@ ol.carousel-indicators {
 body {
   margin: 0 0 584px 0;
   overflow-x: hidden; }
+
+.whole-page {
+  position: relative; }
 
 .sections-heading-and-intro-text h2 {
   font-family: "Montserrat-Bold", Helvetica, Arial, sans-serif;

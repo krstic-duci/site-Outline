@@ -252,28 +252,27 @@ ol.carousel-indicators {
     .panel.panel-default .panel-heading a:hover {
       text-decoration: none; }
 
-.panel-collapse.collapse.in .panel-body {
-  border: none;
+.panel-collapse .panel-body {
+  border: none !important;
   padding: 30px 30px 50px 30px;
   font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #444444;
   line-height: 30px; }
 
-.transform-caret {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.fa.fa-chevron-down {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.active-chevron .fa.fa-chevron-down {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
-
-.bg-color-panel-heading {
-  background-color: #fff; }
 
 /*-------------  Pages Layout  --------------*/
 #nav-side {
@@ -333,13 +332,13 @@ ol.carousel-indicators {
 
 .wrapper-clients-images-header {
   padding: 30px;
-  /*odavde poceti sa problemom clients img*/
   background-color: #4fd2c2;
   position: relative;
   width: 100%; }
 
 body {
-  padding: 0 0 584px 0; }
+  padding: 0 0 584px 0;
+  overflow-x: hidden; }
 
 .sections-heading-and-intro-text h2 {
   font-family: "Montserrat-Bold", Helvetica, Arial, sans-serif;

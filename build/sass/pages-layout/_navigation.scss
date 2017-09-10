@@ -5,13 +5,13 @@
 @import "../modules/main";
 @import "../base/main";
 #nav-side {
-    position: absolute;
-    right: -30%;
-    background: white;
-    z-index: 100;
-    width: 30%;
-    height: 100%;
-    top: 10%;
+  position: fixed;
+  right: -15%;
+  background: white;
+  z-index: 100;
+  width: 15%;
+  height: 100%;
+  top: 0;
 }
 
 .navigation-top {
@@ -24,6 +24,7 @@
   .menu-button {
     float: right;
     margin-top: -20px;/**/
+
     a {
     color: #fff;
     font-family: $ff-montserrat-regular;
@@ -31,28 +32,54 @@
     line-height: 26px;/**/
     letter-spacing: 4px;/**/
 
-      &:hover {
-        text-decoration: none;
-
-      }
     }
   }
 }
 
 ul.list-unstyled.sidebar {
 
+  hr {
+    margin: 5px;
+  }
   li {
-
+    margin: 40px 0px 0 15px;
   }
 
   a {
+    font-size: 20px; /**/
+    @include transitions(all 0.2s linear);
+    color: #454545;/**/
 
     &:hover {
-
+      @include transitions(all 0.2s linear);
     }
   }
 }
 .show-hide-nav-sidebar {
   right: 0%;
   transition: all 1s linear;
+}
+.icons-side-menu {
+
+  .text-in-side-menu {
+    margin: 15px;
+    color: #454545;
+  }
+
+  i {
+    display: inline-block;
+    padding: 15px;
+
+    &:hover {
+      @include transitions(all 0.2s linear);
+      color: #30beac; /**/
+    }
+  }
+}
+.slow-move-right {
+  @include transitions(all 0.35s linear);
+}
+
+.slow-move-left {
+  @include transitions(all 0.3s linear);
 }

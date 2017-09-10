@@ -1,8 +1,14 @@
+// Declare vars for counting nums
+var numOneInterval;
+var numTwoInterval;
+var numThreeInterval;
+
 function countUp() {
-  // Declare vars for counting nums
-  var numOneInterval;
-  var numTwoInterval;
-  var numThreeInterval;
+
+  // Clear previous states
+  clearInterval(numOneInterval);
+  clearInterval(numTwoInterval);
+  clearInterval(numThreeInterval);
 
   // Declare and asign vals to nums for counting nums
   var numOneCount = 0;
@@ -36,8 +42,8 @@ function countUp() {
     }
   }, 100);
 }
-  
+
 // when user scroll to carousel show nums
-$('.wrapper-carousel').waypoint(function () {
+$('.wrapper-carousel').waypoint(function() {
   countUp();
-}, {offset: '25%'});
+}, { offset: '25%' });

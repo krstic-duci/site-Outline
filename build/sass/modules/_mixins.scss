@@ -1,0 +1,75 @@
+// For adding paddings to elements
+@mixin pad($pads...) {
+  padding: $pads;
+}
+// For adding margins to elements
+@mixin marg($marg...) {
+  margin: $marg;
+}
+// For all headings on page (h1-h6)
+@mixin headings($font-family, $font-size, $color, $lh, $letsp) {
+  font-family:    $font-family;
+  font-size:      $font-size;
+  color:          $color;
+  line-height:    $lh;
+  letter-spacing: $letsp;
+}
+// For all paragraphs on page
+@mixin paragraphs($font-family, $font-size, $color, $lh, $letsp) {
+  font-family:    $font-family;
+  font-size:      $font-size;
+  color:          $color;
+  line-height:    $lh;
+  letter-spacing: $letsp;
+}
+// For adding border parameters
+@mixin borders($width, $color, $border-style: solid) {
+  border-bottom-width: $width;
+  border-bottom-color: $color;
+  border-bottom-style: solid;
+}
+// For adding border-radius to elements
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+// For box-shadows
+@mixin box-shadows($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow:    $args;
+  box-shadow:         $args;
+}
+// For transforms divs, imgs
+@mixin transforms($transforms) {
+  -webkit-transform: $transforms;
+     -moz-transform: $transforms;
+      -ms-transform: $transforms;
+       -o-transform: $transforms;
+          transform: $transforms;
+}
+// For adding transitions to divs, imgs
+@mixin transitions($params...) {
+  -webkit-transition: $params;
+     -moz-transition: $params;
+      -ms-transition: $params;
+       -o-transition: $params;
+          transition: $params;
+}
+// Placeholder form color
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}

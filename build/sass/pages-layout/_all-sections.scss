@@ -1,0 +1,266 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+//------- Elements on index.html that have same ---------//
+//---- value and props are listed in this subsection ----//
+
+//must set body padding-bottom to 584px so footer can be seen nicely
+body {
+  @include pad(0 0 584px 0);
+}
+
+// Style h2 and para text into all sections
+.sections-heading-and-intro-text {
+
+  h2 { 
+    @include headings($ff-montserrat-bold, $hdng-h2-fs, 
+    $color-font-hdngs-sections, $hdng-h2-lh, null);
+  }
+
+  p {
+    @include paragraphs($ff-opensans-regular, $para-intro-text-fs, 
+    $color-font-para, $para-intro-text-lh, null);
+    // must place margin-bottom of 50px here because of media-query
+    // look in media-query line 7 and 12
+    margin-bottom: 50px;
+  }
+}
+// Style all h5 on page
+.style-all-h5 {
+  @include headings($ff-montserrat-bold, $hdng-h5-fs, 
+  $color-font-hdngs-sections, $hdng-h5-lh, $hdng-h5-letsp);
+}
+// Style para that comes right after h5
+.style-para-below-h5-ft-pdcs-pric {
+  @include paragraphs($ff-opensans-regular, $para-below-h5-ft-pdcs-pric-fs,
+  $color-font-divs-in-sections, $para-below-h5-ft-pdcs-pric-lh, null);
+}
+// Style para that comes right after h5
+.style-para-below-h5-dsgn-bnft {
+  @include paragraphs($ff-opensans-regular, $para-below-h5-dsgn-bnft-fs, 
+  $color-font-para, $para-below-h5-dsgn-bnft-lh, null);
+}
+
+
+//----------  Features & Products sections  ----------//
+
+// For positioning header img
+.box-features-section {
+  position: relative;
+}
+// Style for same elems in Features & Products section
+.box-features-section, .box-products-section {
+  @include borders($border-width-ft-pdcs-section, $color-border-ft-pdcs-section);
+  @include pad(145px 0 115px 0);
+  background-color: $color-bg-ft-pdcs-faqs-section;
+  z-index: 1;
+}
+.wrapper-divs-features>div, .wrapper-divs-products>div {
+
+  a {
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.wrapper-content-features, .wrapper-content-img-products {
+  @include marg(0 0 15px 0);
+  @include pad(22px);
+  @include transitions(all 0.3s linear);
+  background-color: $color-bg-wrapper-divs-ft-pric-faqs;
+  text-align: center;
+}
+// Features section
+.wrapper-content-features {
+
+  &:hover {
+    @include transforms(translate(0, -15px));
+    @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+
+    i {
+      color: $color-font-hover-font-awesome;
+    } 
+  }
+
+  i {
+    color: $color-btns-font-awesome-pric-nums; 
+  }
+
+  h5 {
+    @include pad(10px 0);
+  }
+
+  p {
+    @include pad(0 0 30px 0);
+  }
+}
+// Product section
+.wrapper-content-img-products {
+  // Padding is set to 0 so img can fit nicely into div
+  @include pad(0);
+  overflow: hidden;
+
+  &:hover {
+    @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+    @include transforms(translate(0, -15px));
+  
+    img {
+      @include transforms(scale(1.1));
+      @include transitions(all 0.5s linear);
+    } 
+  }
+
+  h5 {
+    @include pad(50px 0 10px 0);
+  }
+
+  p {
+    @include pad(0 0 70px 0);
+  } 
+}
+//----------  Design & Benefits section  ----------//
+
+// Style for same elems in Design & Benefits section
+.box-design-section, .box-heading-and-desc-text-benefits-section,
+.bg-img-outline-app {
+  @include pad(145px 0);
+  background-color: $color-bg-wrapper-divs-ft-pric-faqs;
+  z-index: 1;
+}
+.style-desc-text-icon-design-section, .style-desc-text-icon-benefits-section {
+  
+  i {
+    color: $color-btns-font-awesome-pric-nums;
+    @include pad(10px 0);
+  }
+
+  p {
+    @include pad(0 30px);
+    @include marg (0 0 15px 0);
+  }
+}
+// Benefits section
+.bg-img-outline-app {
+  background: url('../images/bg-img/bg_3.jpg');
+  background-attachment: fixed;
+
+  .sections-heading-and-intro-text {
+
+    h2 { 
+      color: $color-font-btn-hdng-para-num;
+      @include marg(-20px 0 0 0);
+    }
+
+    p { 
+      @include pad(20px 0 0 0);
+      color:  $color-font-btn-hdng-para-num; 
+    }
+  }
+}
+.style-desc-text-icon-benefits-section {
+
+  p {
+    @include marg (0 0 30px 0); 
+  }
+}
+.button-benefits {
+  @include marg(0 0 60px 0);
+}
+//----------  Testimonies section  ----------//
+
+.wrapper-numbers-and-bg-img {
+  @include pad(120px 0);
+  background: url('../images/bg-img/bg_2.jpg') no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.wrapper-count-numbers {
+  color: $color-font-btn-hdng-para-num;
+  font-family: $ff-montserrat-regular;
+
+  .number-count-up {
+    @include paragraphs(null, $num-count-up-fs, null, 
+    $num-count-up-and-para-below-it-lh, null);
+  }
+
+  .desc-text-below-num-count {
+    @include paragraphs(null, $para-below-num-count-up-fs, null,
+    $num-count-up-and-para-below-it-lh, $para-below-num-count-up-letsp);
+    @include pad(20px 0 0 0);
+  }
+}
+//----------  Pricing section  ----------//
+
+.box-pricing-section {
+  @include pad(145px 0 200px 0);
+  background-color: $color-bg-wrapper-divs-ft-pric-faqs;
+  z-index: 1;
+}
+.container-pricing {
+  @include pad(48px 0);
+  @include marg(37px 0 0 0);
+  @include transitions(all 0.3s linear);
+  cursor: pointer;
+
+  &:hover {
+    @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+    @include transforms(translate(0, -15px));
+    @include transitions(all 0.3s linear);
+  }
+
+  .links-pricing-section {
+  
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  i {
+    color: $color-btns-font-awesome-pric-nums;
+  }
+
+  .num-pricing {
+    @include marg(0 0 0 -3px);
+    @include paragraphs($ff-montserrat-regular, $para-num-price-fs, 
+    $color-btns-font-awesome-pric-nums, null, null);
+  }
+
+  .style-month-pricing {
+    color: $color-font-span-month-pric;
+  }
+}
+#well-marked-price {
+  @include marg(21px 0 0 0);
+  @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
+  @include border-radius(4px 4px 0 0);
+  border-top: $border-width-pric-section solid 
+  $color-btns-font-awesome-pric-nums;
+
+  &:hover {
+    @include transforms(translate(0, 0));
+  }
+}
+//----------  FAQs section  ----------//
+
+.box-faqs-section {
+  background-color: $color-bg-ft-pdcs-faqs-section;
+  z-index: 1;
+}
+.form-inside-faqs {
+  @include pad(60px 0);
+  background-color: $color-bg-clients-crls-form;
+}
+.form-inline .form-group .form-control {
+  @include placeholder($color-crls-indicators-form);
+  background-color: $color-bg-clients-crls-form;
+  border: $border-width-form solid $color-border-form;
+  box-shadow: none;
+  height: $form-input-height;
+}

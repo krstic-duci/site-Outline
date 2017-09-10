@@ -1,0 +1,47 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+// List of colors
+$_black:          #000000;
+$_cyan-moderate:  #4fd2c2;
+$_gray-darker:    #6a6a6a;
+$_gray-light:     #f2f2f2;
+$_gray-moderate:  #444444;
+$_gray:           #cccccc;
+$_green-light-50: rgba(48,190,172, 0.5);
+$_green-light:    #30beac;
+$_grey-darker:    #9a9fa5;
+$_grey-moderate:  #3b3d40;
+$_grey:           #919191;
+$_snowish:        #fafafa;
+$_white-50:       rgba(255,255,255,0.5);
+$_white:          #ffffff;
+$_white-light:    #E2E2E2;
+
+// Background colors
+$color-bg-btns:                      $_green-light;
+$color-bg-clients-crls-form:         $_cyan-moderate;
+$color-bg-ft-pdcs-faqs-section:      $_snowish;
+$color-bg-wrapper-divs-ft-pric-faqs: $_white;
+$color-bg-wrapper-footer:            $_grey-moderate;
+
+// Borders
+$color-border-form:             $_white;
+$color-border-ft-pdcs-section:  $_gray-light;
+
+// Text(paragraphs), buttons, headings, numbers
+$color-btns-font-awesome-pric-nums:     $_cyan-moderate;
+$color-btns-nav:                        $_white-light;
+$color-crls-indicators-form:            $_white-50; 
+$color-font-divs-in-sections:           $_grey;
+$color-font-hover-font-awesome:         $_green-light-50;
+$color-font-links-footer:               $_grey-darker;
+$color-font-para-accordion:             $_gray-moderate;
+$color-font-para:                       $_gray-darker;
+$color-font-span-month-pric:            $_gray;
+$color-font-hdngs-sections:             $_black;
+//(hdngs from above are listed across sections)
+$color-font-btn-hdng-para-num:          $_white;
+//(hdng from above are inside header, footer, bnft-section)  

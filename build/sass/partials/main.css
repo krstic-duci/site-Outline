@@ -1,0 +1,132 @@
+@media screen and (min-width: 1200px) {
+  .style-desc-text-icon-design-section {
+    margin-top: 180px; }
+
+  .style-img-design-section img {
+    margin-top: 100px; }
+
+  .form-inline .form-group .form-control {
+    width: 130%; }
+
+  .images-clients {
+    margin-left: 55px; }
+    .images-clients img {
+      padding: 20px 0; } }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .wrapper-design-cols {
+    margin-top: 100px; } }
+@media screen and (min-width: 992px) {
+  .main-heading-and-info-text {
+    margin-top: 45%; }
+
+  .sections-heading-and-intro-text p {
+    margin-right: 20.666667%; }
+
+  .iphones-over-header-img {
+    bottom: -140px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form-inline .form-group .form-control {
+    width: 90%; }
+
+  .iphones-over-header-img {
+    margin-top: -480px;
+    bottom: -480px; }
+
+  body {
+    padding: 0; }
+
+  footer {
+    bottom: 0;
+    height: auto;
+    padding: 80px 0;
+    position: static;
+    width: 100%;
+    z-index: 1; }
+
+  .style-img-design-section img {
+    margin: 0 auto; }
+
+  .company-img {
+    margin-bottom: 20px;
+    /**/
+    display: inline-block !important;
+    /**/ } }
+@media screen and (max-width: 767px) {
+  .carousel-para-text {
+    font-size: 20px;
+    line-height: 35px; }
+
+  .carousel-inner img {
+    height: 130px;
+    width: 130px; }
+
+  .bg-img-outline-app .sections-heading-and-intro-text h2 {
+    font-size: 35px;
+    line-height: 53px;
+    margin: 0 10px; }
+
+  .main-heading-and-info-text h1 {
+    font-size: 40px;
+    line-height: 40px; }
+
+  .sections-heading-and-intro-text h2 {
+    font-size: 35px;
+    line-height: 50px; }
+
+  .container-pricing:hover {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+
+  .iphones-over-header-img {
+    margin-top: -100px;
+    bottom: -140px; }
+
+  .style-img-design-section img {
+    margin: 0 auto; }
+
+  .panel.panel-default .panel-heading a {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none; }
+
+  body {
+    padding: 0; }
+
+  footer {
+    bottom: 0;
+    height: auto;
+    margin-top: -80px;
+    padding: 50px 0;
+    position: static;
+    width: 100%;
+    z-index: 1; }
+
+  .box-testimonies-section {
+    margin-bottom: -80px; }
+
+  .box-heading-and-desc-text-benefits-section,
+  .wrapper-accordion-and-faqs-section {
+    padding: 0 0 80px 0; }
+
+  .box-features-section, .box-design-section, .box-testimonies-section,
+  .box-products-section, .box-benefits-section, .box-pricing-section,
+  .box-faqs-section {
+    padding: 80px 0; }
+
+  .company-img {
+    margin-bottom: 30px;
+    /**/
+    display: inline-block !important;
+    /**/ } }
+@media screen and (min-width: 480px) and (max-width: 512px) {
+  #style-i-on-xs {
+    margin-top: 14px;
+    /*19*/ } }
+@media screen and (max-width: 480px) {
+  .carousel-inner img.img-responsive.img-circle {
+    margin: 10px auto; } }
+
+/*# sourceMappingURL=main.css.map */

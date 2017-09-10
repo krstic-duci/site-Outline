@@ -1,0 +1,58 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+@import "../modules/main";
+@import "../base/main";
+#nav-side {
+    position: absolute;
+    right: -30%;
+    background: white;
+    z-index: 100;
+    width: 30%;
+    height: 100%;
+    top: 10%;
+}
+
+.navigation-top {
+  @include marg(40px 0);
+
+  .submit-button-form {
+    float: left;
+  }
+
+  .menu-button {
+    float: right;
+    margin-top: -20px;/**/
+    a {
+    color: #fff;
+    font-family: $ff-montserrat-regular;
+    font-size: 15px;/**/
+    line-height: 26px;/**/
+    letter-spacing: 4px;/**/
+
+      &:hover {
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+ul.list-unstyled.sidebar {
+
+  li {
+
+  }
+
+  a {
+
+    &:hover {
+
+    }
+  }
+}
+.show-hide-nav-sidebar {
+  right: 0%;
+  transition: all 1s linear;
+}

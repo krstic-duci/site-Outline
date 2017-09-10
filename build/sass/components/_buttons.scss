@@ -1,0 +1,103 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+.buttons-on-page {
+  @include marg(75px 0);
+
+  i {
+    font-size: $buttons-header-font-awesome-fs;
+  }
+
+  a {
+    @include border-radius(50px);
+    @include marg(20px 0 0 0);
+    @include pad(22px 40px);
+    @include transitions(background-color 0.3s linear);
+    background-color: $color-btns-font-awesome-pric-nums;
+    color:            $color-font-btn-hdng-para-num;
+    letter-spacing:   $buttons-letsp;
+    line-height:      $buttons-lh;
+    text-decoration: none;
+    font: {
+      family:         $ff-montserrat-regular;
+      size:           $buttons-fs;
+    }
+
+    &:hover {
+      @include box-shadows(0 5px 10px rgba(0, 0, 0, 0.3));
+      @include transitions(all 0.4s linear);
+      background-color: $color-bg-btns;
+      text-decoration: none;
+    }
+  }
+}
+.submit-button-form {
+
+  button {
+    @include border-radius(50px);
+    @include pad(22px 40px);
+    @include transitions(background-color 0.3s linear);
+    background-color: $color-bg-btns;
+    border-color:     $color-bg-btns;
+    color:            $color-font-btn-hdng-para-num;
+    letter-spacing:   $buttons-letsp;
+    line-height:      $buttons-lh;
+    text-decoration: none;
+    font: {
+      family:         $ff-montserrat-regular;
+      size:           $buttons-fs;
+    }
+
+    &:hover {
+      @include box-shadows(0 5px 10px rgba(0, 0, 0, 0.3));
+      @include transitions(all 0.4s linear);
+      background-color: $color-bg-btns;
+      border-color:     $color-bg-btns;
+      color:            $color-font-btn-hdng-para-num;
+      text-decoration: none;
+    }
+  }
+}
+.outline-logo {
+  @include marg(20px 0 0 0);
+  font-family: $ff-montserrat-light;
+  
+  a {
+    @include transitions(all 0.3s linear);
+    @include pad(10px 15px);
+    border: $buttons-outline-logo-border-width solid $color-font-links-footer;
+    color: $color-font-links-footer;
+    font-size: $buttons-outline-logo-fs;
+    letter-spacing: $buttons-outline-logo-letsp;
+    line-height: $buttons-outline-logo-lh;
+
+    &:hover {
+      @include transitions(all 0.3s linear);
+      text-decoration: none;
+      border-color: $color-border-form;
+      color: $color-font-btn-hdng-para-num;
+    }
+  }
+}
+.outline-logo-nav {
+  font-family: $ff-montserrat-bold;
+
+  a {
+  @include transitions(all 0.3s linear);
+  @include pad(0 10px);
+  border: $buttons-outline-logo-border-width solid $color-font-btn-hdng-para-num;
+  color: $color-font-btn-hdng-para-num;
+  font-size: $buttons-outline-logo-fs;
+  letter-spacing: $buttons-outline-logo-letsp;
+  line-height: $buttons-outline-logo-lh;
+
+  &:hover {
+    @include transitions(all 0.3s linear);
+    text-decoration: none;
+    border-color: $color-btns-nav;
+    color: $color-btns-nav;
+    }
+  }
+}

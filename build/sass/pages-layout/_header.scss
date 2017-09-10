@@ -1,0 +1,36 @@
+// LEGEND: list of abbreviations used as name conventions//
+// crls = carousel ; ft = features; pdcs = products; dsgn = design; 
+// bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
+// fs = font-size; pric = pricing
+
+.header-bg-img {
+  background: url('../images/bg-img/bg_1.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+.main-heading-and-info-text {
+  color: $color-font-btn-hdng-para-num;
+
+  h1 {
+    @include headings($ff-montserrat-bold, $hdng-h1-fs, null, $hdng-h1-lh, 
+    null); 
+  }
+
+  p {
+    @include paragraphs($ff-opensans-regular, $para-header-fs, null,
+    $para-header-lh, $para-header-letsp);
+  }
+}
+.iphones-over-header-img {
+  position: relative;
+
+  img{
+    float: right;
+  }
+}
+.wrapper-clients-images-header {
+  @include pad(30px);/*odavde poceti sa problemom clients img*/
+  background-color: $color-bg-clients-crls-form;
+  position: relative;
+  width: 100%;
+}

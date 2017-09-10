@@ -1,8 +1,13 @@
-// Declare vars for counting nums
+/*==================================================
+=            Count nums to certain vals            =
+==================================================*/
+
+/*----------  Declare vars for counting nums  ----------*/
 var numOneInterval;
 var numTwoInterval;
 var numThreeInterval;
 
+/*----------  Declare fnc for counting nums  ----------*/
 function countUp() {
 
   // Clear previous states
@@ -43,7 +48,32 @@ function countUp() {
   }, 100);
 }
 
-// when user scroll to carousel show nums
+/*=====  End of Count nums to certain vals  ======*/
+
+
+/*====================================
+=            Call countUp            =
+====================================*/
+
+/*-- When user scroll to carousel show nums --*/
 $('.wrapper-carousel').waypoint(function() {
   countUp();
 }, { offset: '25%' });
+
+/*=====  End of Call countUp  ======*/
+
+/*=============================================================
+=       Add props on certain points(elems) when scroll        =
+=============================================================*/
+
+/*--  When user scroll to clients image return vals to inital state  --*/
+$('.wrapper-clients-images-header').waypoint(function() {
+
+  // Return side menu off the page
+  $('#nav-side').css('right', '-15%');
+
+  // Return to default value
+  $('.whole-page').css('left', '0');
+}, { offset: '35%' });
+
+/*=====  End of Add props on certain points on scroll  ======*/

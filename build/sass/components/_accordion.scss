@@ -37,19 +37,20 @@
 
   }
 }
-.panel-collapse.collapse.in {
+.panel-collapse {
 
   .panel-body {
-    border: none;
+    border: none !important;
     @include pad(30px 30px 50px 30px);
     @include paragraphs($ff-opensans-regular, $para-text-accordion-fs, 
     $color-font-para-accordion, $para-text-accordion-lh, null);
   }  
 }
-.transform-caret {
-  @include transitions(all 0.3s linear);
-  @include transforms(rotate(180deg));
+.fa.fa-chevron-down {
+  @include transitions(all 0.2s linear);
 }
-.bg-color-panel-heading {
-  background-color: #fff;
+.active-chevron {
+  .fa.fa-chevron-down {
+    @include transforms(rotate(180deg));
+  }
 }

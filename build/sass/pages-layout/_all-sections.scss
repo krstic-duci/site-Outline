@@ -8,7 +8,7 @@
 
 //must set body padding-bottom to 584px so footer can be seen nicely
 body {
-  @include pad(0 0 584px 0);
+  @include marg(0 0 584px 0);
   overflow-x: hidden;
 }
 

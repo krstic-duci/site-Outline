@@ -1,6 +1,8 @@
 $(function() {
 
-  // on 480px make new breakpoints
+  /*=============================================
+  =           Breakpoints on 480px             =
+  =============================================*/
   $(window).resize(function() {
     if ($(window).width() < 463) {
 
@@ -26,18 +28,31 @@ $(function() {
 
   });
 
+  /*=====  End of Breakpoints on 480px   ======*/
+  
+  
+  /*=================================================
+  =            Inital state in accordion            =
+  =================================================*/
+    
   // Set open headingOne background to white
   $('#headingOne').css('background', '#fff');
 
   // Set inital state of chevron arrow
   $('#headingOne').addClass('active-chevron');
 
-  // Set color to open accordion
+  /*=====  End of Inital state in accordion  ======*/
+
+
+  /*=============================================
+  =          Set color to open accordion            =
+  =============================================*/
+
   $('#accordion').on('shown.bs.collapse', function() {
 
     $('.panel-collapse').each(function() {
 
-      // Four quicker usage
+      // For quicker usage
       var $thisHeading = $(this).prev('.panel-heading');
 
       if ($(this).hasClass('in')) {
@@ -52,13 +67,17 @@ $(function() {
         $(this).prev('.panel-heading').css('background', '#fafafa');
       }
     });
-    
   });
+  /*=====  End of Set color to open accordion  ======*/
 
-  // Set color to hidden accordion
+
+  /*=============================================
+  =       Set color to hidden accordion         =
+  =============================================*/
+
   $('#accordion').on('hidden.bs.collapse', function() {
 
-    //
+    // For quicker usage
     var $panelCollHeading = $('.panel-collapse').prev('.panel-heading');
 
     // When accordion is hidden set proper bg color
@@ -69,11 +88,77 @@ $(function() {
 
   });
 
-});
+  /*=====  End of Set color to hidden accordion  ======*/
+  
+  /*==============================================
+  =            Proper load of sidebar nav            =
+  ==============================================*/
 
-// Initialize Animate On Scroll 
-$(function() {
-  AOS.init({
-    once: true
+  $('.menu-button').click(function() {
+    $('#nav-side').css({
+      right: '0',
+      transition: 'right 0.8s linear'
+    });
+    $('.whole-page').css({
+      left: '-15%',
+      transition: 'left 0.7s linear'
+    });
   });
+  
+  
+  /*=====  End of Proper load of sidebar nav  ======*/
+  
+
+  /*=========================================
+  =            Animate on Scroll            =
+  =========================================*/
+  
+    AOS.init({
+      once: true
+    });
+  
+  /*=====  End of Animate on Scroll  ======*/
+
+  /*=========================================
+  =            Smooth Scroll            =
+  =========================================*/
+  
+  // Select all links with hashes
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          }
+        });
+      }
+    }
+  });
+  
+  /*=====  End of Smooth Scroll  ======*/
+
 });

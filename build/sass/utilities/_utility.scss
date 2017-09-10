@@ -1,7 +1,11 @@
 .text_decoration-none {
   text-decoration: none;
 
+  &:hover {
+    text-decoration: none;
+  }
   &:focus {
     text-decoration: none;
   }
+
 }

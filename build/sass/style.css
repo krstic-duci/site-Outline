@@ -279,10 +279,9 @@ ol.carousel-indicators {
 /*-------------  Pages Layout  --------------*/
 #nav-side {
   position: fixed;
-  right: -15%;
+  right: -60%;
   background: white;
   z-index: 100;
-  width: 15%;
   height: 100%;
   top: 0; }
 
@@ -659,6 +658,13 @@ ul.list-unstyled li {
   margin: 20px 0;
   color: #ffffff; }
 
+.back-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .back-to-top i {
+    color: #4fd2c2; }
+
 /*-------------  Media Query  ---------------*/
 @media screen and (min-width: 1200px) {
   .style-desc-text-icon-design-section {
@@ -712,6 +718,10 @@ ul.list-unstyled li {
     margin-bottom: 20px;
     /**/
     display: inline-block !important;
+    /**/ }
+
+  body {
+    margin: 0;
     /**/ } }
 @media screen and (max-width: 767px) {
   .carousel-para-text {
@@ -782,6 +792,10 @@ ul.list-unstyled li {
     margin-bottom: 30px;
     /**/
     display: inline-block !important;
+    /**/ }
+
+  body {
+    margin: 0;
     /**/ } }
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {

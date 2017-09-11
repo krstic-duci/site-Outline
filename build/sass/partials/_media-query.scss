@@ -193,6 +193,10 @@
   body {
     margin: 0; /**/
   }
+  ul.list-unstyled.sidebar li {
+    margin: 18px 0px 0 15px;/**/
+  }
+      
 }
 //On 512px screen divs in benefits must be placed & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {

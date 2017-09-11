@@ -48,40 +48,39 @@ function countUp() {
   }, 100);
 }
 
-/*=====  End of Count nums to certain vals  ======*/
-
-
-/*====================================
-=            Call countUp            =
-====================================*/
-
-/*-- When user scroll to carousel show nums --*/
+/*-- When user scroll to carousel show nums and call countUp fnc--*/
 $('.wrapper-carousel').waypoint(function() {
   countUp();
 }, { offset: '25%' });
 
-/*=====  End of Call countUp  ======*/
+/*=====  End of Count nums to certain vals  ======*/
+
 
 /*=============================================================
 =       Add props on sidebar menu when scroll        =
 =============================================================*/
 
-/*----------  Call Waypoint JS on user scroll  ----------*/
-$('.wrapper-clients-images-header').waypoint(function() {
+function waypointOnScroll() {
+  /*----------  Call Waypoint JS on user scroll  ----------*/
+  $('.wrapper-clients-images-header').waypoint(function() {
 
-/*--  When user scroll to clients image give 
-      sidebar menu and whole-page new vals   --*/
-  if ($(window).width() >= 768 && $(window).width() <= 1199) {
-    $('#nav-side').css('right', '-30%');
-  } else if ($(window).width() < 768) {
-    $('#nav-side').css('right', '-40%');
-  } else {
-    $('#nav-side').css('right', '-15%');
-  }
+    var $navSide = $('#nav-side');
+    
+    /*--  When user scroll to clients image give 
+          sidebar menu and whole-page new vals   --*/
+    if ($(window).width() >= 768 && $(window).width() <= 1199) {
+      $navSide.css('right', '-30%');
+    } else if ($(window).width() < 768) {
+      $navSide.css('right', '-40%');
+    } else {
+      $navSide.css('right', '-15%');
+    }
 
-  /*----------  Return whole-page to default value  ----------*/
-  $('.whole-page').css('left', '0');
+    /*----------  Return whole-page to default value  ----------*/
+    $('.whole-page').css('left', '0');
 
-}, { offset: '35%' });
+  }, { offset: '35%' });
+}
+waypointOnScroll();
 
 /*=====  End of Add props on sidebar menu when scroll  ======*/

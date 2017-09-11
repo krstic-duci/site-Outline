@@ -29,12 +29,12 @@ $(function() {
   });
 
   /*=====  End of Breakpoints on 480px   ======*/
-  
-  
+
+
   /*=================================================
   =            Inital state in accordion            =
   =================================================*/
-    
+
   // Set open headingOne background to white
   $('#headingOne').css('background', '#fff');
 
@@ -89,76 +89,125 @@ $(function() {
   });
 
   /*=====  End of Set color to hidden accordion  ======*/
-  
+
   /*==============================================
   =            Proper load of sidebar nav            =
   ==============================================*/
 
-  $('.menu-button').click(function() {
-    $('#nav-side').css({
-      right: '0',
-      transition: 'right 0.8s linear'
+
+  function setNavOff() {
+
+    var $width = $(window).width();
+    var $navSideMenu = $('#nav-side');
+    var $wholePage = $('.whole-page');
+
+    /*----------  Set inital(push off the page) 
+                    vals for sidebar nav  ----------*/
+    // if ($width >= 768 && $width <= 1199) {
+    //   $navSideMenu.css({
+    //     right: '-50%',
+    //   });
+    // } else if ($width < 768) {
+    //   $navSideMenu.css({
+    //     right: '-60%',
+    //   });
+    // } else {
+    //   $navSideMenu.css({
+    //     right: '-35%',
+    //   });
+    // }
+    /*----------  When user click on Menu anhor tag
+        sidemenu nav appear and pushes the whole page to the left  ----------*/
+    $('.menu-button').click(function() {
+
+      if ($width >= 768 && $width <= 1199) {
+        $navSideMenu.css({
+          right: '0',
+          transition: 'right 0.8s linear',
+          width: '30%'
+        });
+        $wholePage.css({
+          left: '-30%',
+          transition: 'left 0.7s linear'
+        });
+      } else if ($width < 768) {
+        $navSideMenu.css({
+          right: '0',
+          transition: 'right 0.8s linear',
+          width: '40%'
+        });
+        $wholePage.css({
+          left: '-40%',
+          transition: 'left 0.7s linear'
+        });
+      } else {
+        $navSideMenu.css({
+          right: '0',
+          transition: 'right 0.8s linear',
+          width: '15%'
+        });
+        $wholePage.css({
+          left: '-15%',
+          transition: 'left 0.7s linear'
+        });
+      }
     });
-    $('.whole-page').css({
-      left: '-15%',
-      transition: 'left 0.7s linear'
-    });
-  });
-  
-  
+  }
+  setNavOff();
+
   /*=====  End of Proper load of sidebar nav  ======*/
-  
+
 
   /*=========================================
   =            Animate on Scroll            =
   =========================================*/
-  
-    AOS.init({
-      once: true
-    });
-  
+
+  AOS.init({
+    once: true
+  });
+
   /*=====  End of Animate on Scroll  ======*/
 
   /*=========================================
   =            Smooth Scroll            =
   =========================================*/
-  
+
   // Select all links with hashes
   $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          }
-        });
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            }
+          });
+        }
       }
-    }
-  });
-  
+    });
+
   /*=====  End of Smooth Scroll  ======*/
 
 });

@@ -43,3 +43,12 @@ ul.list-unstyled {
   @include marg(20px 0);
   color: $color-font-btn-hdng-para-num;
 }
+.back-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  i {
+    color: #4fd2c2;
+  }
+}

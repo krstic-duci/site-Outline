@@ -21,7 +21,7 @@
     }
   }
 }
-//on lg place iphone white img and associate divs correctly (design section) //4
+//On lg put iphone white img and associate divs correctly (design section) //4
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper-design-cols {
     margin-top: 100px; //4
@@ -43,7 +43,6 @@
   .iphones-over-header-img {
     bottom: -140px;             //7
   }
-
 }
 //on sm lower the width of input in form (faq section)                       //8
 //on sm header img must be placed & positioned correctly                     //9
@@ -79,6 +78,9 @@
   .company-img {
     margin-bottom: 20px;  /**/
     display: inline-block !important;/**/
+  }
+  body {
+    margin: 0; /**/
   }
 }
 //on xs font and line height inside carousel must be smaller                //13
@@ -188,8 +190,11 @@
     margin-bottom: 30px;  /**/
     display: inline-block !important;/**/
   }
+  body {
+    margin: 0; /**/
+  }
 }
-// on 512px screen divs in benefits must be placed & positioned correctly /*19*/
+//On 512px screen divs in benefits must be placed & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
     margin-top: 14px; /*19*/  
@@ -200,8 +205,4 @@
   .carousel-inner img.img-responsive.img-circle {
     margin: 10px auto;
   }
-}
-//disable transitions, transforms on screen <=1024px
-@media screen and (max-width: 1024px) {
-  
 }

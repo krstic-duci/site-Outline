@@ -63,17 +63,25 @@ $('.wrapper-carousel').waypoint(function() {
 /*=====  End of Call countUp  ======*/
 
 /*=============================================================
-=       Add props on certain points(elems) when scroll        =
+=       Add props on sidebar menu when scroll        =
 =============================================================*/
 
-/*--  When user scroll to clients image return vals to inital state  --*/
+/*----------  Call Waypoint JS on user scroll  ----------*/
 $('.wrapper-clients-images-header').waypoint(function() {
 
-  // Return side menu off the page
-  $('#nav-side').css('right', '-15%');
+/*--  When user scroll to clients image give 
+      sidebar menu and whole-page new vals   --*/
+  if ($(window).width() >= 768 && $(window).width() <= 1199) {
+    $('#nav-side').css('right', '-30%');
+  } else if ($(window).width() < 768) {
+    $('#nav-side').css('right', '-40%');
+  } else {
+    $('#nav-side').css('right', '-15%');
+  }
 
-  // Return to default value
+  /*----------  Return whole-page to default value  ----------*/
   $('.whole-page').css('left', '0');
+
 }, { offset: '35%' });
 
-/*=====  End of Add props on certain points on scroll  ======*/
+/*=====  End of Add props on sidebar menu when scroll  ======*/

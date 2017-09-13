@@ -19,6 +19,7 @@ $_snowish:        #fafafa;
 $_white-50:       rgba(255,255,255,0.5);
 $_white:          #ffffff;
 $_white-light:    #E2E2E2;
+$_grayish:        #454545;
 
 // Background colors
 $color-bg-btns:                      $_green-light;
@@ -44,4 +45,5 @@ $color-font-span-month-pric:            $_gray;
 $color-font-hdngs-sections:             $_black;
 //(hdngs from above are listed across sections)
 $color-font-btn-hdng-para-num:          $_white;
-//(hdng from above are inside header, footer, bnft-section)  
+//(hdng from above are inside header, footer, bnft-section) 
+$color-font-sidemenu-nav:               $_grayish;

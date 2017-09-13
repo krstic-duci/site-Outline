@@ -34,3 +34,25 @@
   position: relative;
   width: 100%;
 }
+@keyframes spin {
+  from {@include transforms(rotate(0deg));}
+  to {@include transforms(rotate(360deg));}
+}
+.back-to-top {
+  display: none;
+}
+.arrow-to-top {
+  display: block;
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  z-index: 1030;
+  border: 1px solid;
+  animation: spin 2s ease-in-out 1;
+
+  i {
+    color: $color-font-hdngs-sections;
+    position: relative;
+    top: -2px;
+  }
+}

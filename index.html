@@ -14,7 +14,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
   <!-- AOS css -->
-  <link rel="stylesheet" href="libs/aos/css/aos.css">
+  <link rel="stylesheet" href="libs/aos/css/aos.min.css">
   <!-- FancyBox (gallery img) -->
   <link rel="stylesheet" href="libs/fancy-box/css/jquery.fancybox.min.css">
 </head>
@@ -57,7 +57,7 @@
       <div class="header-bg-img">
 
         <!-- Navigation -->
-        <nav>
+        <nav role="navigation">
           <div class="container">
             <div class="row">
               <div class="col-md-12 navigation-top">
@@ -71,6 +71,7 @@
                 <div class="menu-button">
                   <a href="#" class="text_decoration-none">
                     MENU
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                   </a>
                 </div><!-- .menu-button -->
 
@@ -85,16 +86,17 @@
             <div class="col-md-6 col-sm-12">
 
               <div class="main-heading-and-info-text">
-                <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+                <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                 We take your business to the next level.
               </h1>
                 <p data-aos="fade-up" data-aos-easing="linear" 
-                data-aos-delay="800" data-aos-duration="700">
+                data-aos-delay="500" data-aos-duration="600">
                   Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
                 </p>
 
                 <div class="buttons-on-page" data-aos="fade-up" 
-                data-aos-easing="linear" data-aos-delay="1400" data-aos-duration="700">
+                data-aos-easing="linear" data-aos-delay="700" 
+                data-aos-duration="600">
                   <a href="#" role="button">
                   <i class="fa fa-apple" aria-hidden="true"></i>
                   SEE ON APPSTORE
@@ -105,7 +107,7 @@
             </div>
 
             <div class="col-md-6 col-sm-12 iphones-over-header-img" 
-            data-aos="fade-up" data-aos-duration="700" data-aos-easing="linear" data-aos-delay="1400">
+            data-aos="fade-up" data-aos-duration="600" data-aos-easing="linear" data-aos-delay="700">
               <img src="build/images/iphone_6_3.png" alt="two black iphones" class="img-responsive">
             </div><!-- .iphones-over-header-img -->
             
@@ -143,6 +145,12 @@
           </div><!-- .row -->
         </div><!-- .container-->
       </div><!-- .wrapper-clients-images-header -->
+
+      <div class="back-to-top">
+        <a href="#">
+          <i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
+        </a>
+      </div><!-- .back-to-top -->
     </header>
     <!-- END Header & Nav -->
 
@@ -952,12 +960,6 @@
             </p>
           </div>
 
-          <div class="back-to-top">
-            <a href="#">
-              <i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
-            </a>
-          </div><!-- .back-to-top -->
-
         </div><!-- .row -->
       </div><!-- .container -->
     </footer>
@@ -969,14 +971,14 @@
   <script src="libs/jquery/jquery-3.2.1.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-  <!-- my JS file -->
-  <script src="build/javascript/script.js"></script>
   <!-- AOS js -->
-  <script src="libs/aos/js/aos.js"></script>
+  <script src="libs/aos/js/aos.min.js"></script>
   <!-- FancyBox JS (gallery img) -->
   <script src="libs/fancy-box/js/jquery.fancybox.min.js"></script>
   <!-- Waypoint.js library -->
   <script src="libs/waypoint/jquery.waypoints.min.js"></script>
+  <!-- my JS file -->
+  <script src="build/javascript/script.js"></script>
   <!-- my waypoint JS file -->
   <script src="build/javascript/waypoint.js"></script>
 </body>

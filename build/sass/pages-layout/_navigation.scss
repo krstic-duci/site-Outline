@@ -2,17 +2,47 @@
 // crls = carousel ; ft = features; pdcs = products; dsgn = design; 
 // bnft = benefits; hdng = heading; ff = font-family; letsp = letter-spacing; 
 // fs = font-size; pric = pricing
+
 @import "../modules/main";
 @import "../base/main";
-#nav-side {
+
+.navigation-vertical {
   position: fixed;
-  right: -60%;
-  background: white;
+  right: -80%;
+  background: $color-bg-wrapper-divs-ft-pric-faqs;
   z-index: 100;
   height: 100%;
   top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-
+.show-menu-lg {
+  @include transitions(all 0.7s linear);
+  right: 0 !important;
+  width: 15% !important;
+}
+.move-page-lg {
+  @include transitions(all 0.6s linear);
+  left: -15% !important;
+}
+.show-menu-md-sm {
+  @include transitions(all 0.7s linear);
+  right: 0 !important;
+  width: 30% !important;
+}
+.move-page-md-sm {
+  @include transitions(all 0.6s linear);
+  left: -30% !important;
+}
+.show-menu-xs {
+  @include transitions(all 0.7s linear);
+  right: 0 !important;
+  width: 40% !important;
+}
+.move-page-xs {
+  @include transitions(all 0.6s linear);
+  left: -40% !important;
+}
 .navigation-top {
   @include marg(40px 0);
 
@@ -22,15 +52,23 @@
 
   .menu-button {
     float: right;
-    margin-top: -20px;/**/
+    @include marg(-28px 0 0 0);
+    border: 2px solid $color-bg-wrapper-divs-ft-pric-faqs;
+    @include transitions(all 0.3s linear);
+
+    &:hover {
+      @include transitions(all 0.3s linear);
+      border-color: $color-crls-indicators-form;
+    }
 
     a {
-    color: #fff;
-    font-family: $ff-montserrat-regular;
-    font-size: 15px;/**/
-    line-height: 26px;/**/
-    letter-spacing: 4px;/**/
-
+      @include pad(8px);
+      color: $color-font-btn-hdng-para-num;
+      font-family: $ff-montserrat-regular;
+      font-size: $anchor-sidemenu-nav-fs;
+      line-height: $para-text-name-user-review-lh;
+      letter-spacing: $hdng-h6-footer-letsp;
+      
     }
   }
 }
@@ -38,16 +76,16 @@
 ul.list-unstyled.sidebar {
 
   hr {
-    margin: 5px;
+    @include marg(5px);
   }
   li {
-    margin: 40px 0px 0 15px;
+    @include marg(40px 0 0 15px);
   }
 
   a {
     font-size: 20px; /**/
     @include transitions(all 0.2s linear);
-    color: #454545;/**/
+    color: $color-font-sidemenu-nav;
 
     &:hover {
       @include transitions(all 0.2s linear);
@@ -61,24 +99,17 @@ ul.list-unstyled.sidebar {
 .icons-side-menu {
 
   .text-in-side-menu {
-    margin: 15px;
-    color: #454545;
+    @include marg(10px);
+    color: $color-font-sidemenu-nav;
   }
 
   i {
     display: inline-block;
-    padding: 15px;
+    @include pad(10px);
 
     &:hover {
       @include transitions(all 0.2s linear);
-      color: #30beac; /**/
+      color: $color-bg-btns;
     }
   }
-}
-.slow-move-right {
-  @include transitions(all 0.35s linear);
-}
-
-.slow-move-left {
-  @include transitions(all 0.3s linear);
 }

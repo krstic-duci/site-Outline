@@ -1,11 +1,43 @@
 $(function() {
 
   /*=============================================
-  =           Breakpoints on 480px             =
+  =       Make new Breakpoint on 480px           =
   =============================================*/
-  function breakpointsLowRes() {
+
+  /*----------  When the page loads make new
+                breakpoints if res < 480px  ----------*/
+
+  function breakpointsOnPageLoad() {
+
+    if ($(window).width() < 463) {
+
+      // section divs (features, designs, products)
+      $('.custom-col-xxs').removeClass('col-xs-6').addClass('col-xs-12');
+
+      // carousel img and para
+      $('.custom-col-crls-xxs')
+        .removeClass('col-xs-4').addClass('col-xs-12');
+      $('.custom-col-crls-para-xxs')
+        .removeClass('col-xs-8').addClass('col-xs-12');
+    } else {
+
+      // section divs (features, designs, products)
+      $('.custom-col-xxs').removeClass('col-xs-12').addClass('col-xs-6');
+
+      // carousel img and para
+      $('.custom-col-crls-xxs')
+        .removeClass('col-xs-12').addClass('col-xs-4');
+      $('.custom-col-crls-para-xxs')
+        .removeClass('col-xs-12').addClass('col-xs-8');
+    }
+  }
+
+  /*----------  When user resize the browser make 
+                new breakpoints if res < 480px  ----------*/
+  function breakpointsOnPageResize() {
 
     $(window).resize(function() {
+
       if ($(window).width() < 463) {
 
         // section divs (features, designs, products)
@@ -27,16 +59,17 @@ $(function() {
         $('.custom-col-crls-para-xxs')
           .removeClass('col-xs-12').addClass('col-xs-8');
       }
-
     });
   }
-  breakpointsLowRes();
 
-  /*=====  End of Breakpoints on 480px   ======*/
+  breakpointsOnPageLoad();
+  breakpointsOnPageResize();
+
+  /*=====  End of Make new Breakpoint on 480px   ======*/
 
 
   /*=================================================
-  =            Inital state in accordion            =
+  =       Inital (default) state in accordion       =
   =================================================*/
 
   function defaultStateAccordion() {
@@ -49,7 +82,7 @@ $(function() {
   }
   defaultStateAccordion();
 
-  /*=====  End of Inital state in accordion  ======*/
+  /*=== End of Inital (default) state in accordion ====*/
 
 
   /*=============================================
@@ -103,61 +136,41 @@ $(function() {
   =            Proper load of sidebar nav            =
   ==============================================*/
 
-  function setNavOff() {
+  function setNavOnOff() {
 
     var $width = $(window).width();
-    var $navSideMenu = $('#nav-side');
+    var $navSideMenu = $('.navigation-vertical');
     var $wholePage = $('.whole-page');
 
     /*----------  When user click on Menu anchor tag
         sidemenu nav appear and pushes the whole page to the left  ----------*/
-    $('.menu-button').click(function() {
+    $('.menu-button').click(function(e) {
+      e.stopPropagation();
 
       if ($width >= 768 && $width <= 1199) {
 
-        $navSideMenu.css({
-          right: '0',
-          transition: 'right 0.8s linear',
-          width: '30%'
-        });
-        $wholePage.css({
-          left: '-30%',
-          transition: 'left 0.7s linear'
-        });
+        $navSideMenu.toggleClass('show-menu-md-sm');
+        $wholePage.toggleClass('move-page-md-sm');
       } else if ($width < 768) {
 
-        $navSideMenu.css({
-          right: '0',
-          transition: 'right 0.8s linear',
-          width: '40%'
-        });
-        $wholePage.css({
-          left: '-40%',
-          transition: 'left 0.7s linear'
-        });
+        $navSideMenu.toggleClass('show-menu-xs');
+        $wholePage.toggleClass('move-page-xs');
       } else {
 
-        $navSideMenu.css({
-          right: '0',
-          transition: 'right 0.8s linear',
-          width: '15%'
-        });
-        $wholePage.css({
-          left: '-15%',
-          transition: 'left 0.7s linear'
-        });
+        $navSideMenu.toggleClass('show-menu-lg');
+        $wholePage.toggleClass('move-page-lg');
       }
     });
 
     /*----------  When user click anywhere on whole page
                        close the side menu nav  ----------*/
-    
+
     $('.whole-page').click(function() {
-      
+
     });
-    
+
   }
-  setNavOff();
+  setNavOnOff();
 
   /*=====  End of Proper load of sidebar nav  ======*/
 
@@ -171,6 +184,7 @@ $(function() {
   });
 
   /*=====  End of Animate on Scroll  ======*/
+
 
   /*=========================================
   =            Smooth Scroll            =
@@ -217,5 +231,5 @@ $(function() {
   smoothScroll();
 
   /*=====  End of Smooth Scroll  ======*/
-
+  
 });

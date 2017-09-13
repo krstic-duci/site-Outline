@@ -64,23 +64,42 @@ function waypointOnScroll() {
   /*----------  Call Waypoint JS on user scroll  ----------*/
   $('.wrapper-clients-images-header').waypoint(function() {
 
-    var $navSide = $('#nav-side');
-    
+    var $navSide = $('.navigation-vertical');
+
     /*--  When user scroll to clients image give 
           sidebar menu and whole-page new vals   --*/
     if ($(window).width() >= 768 && $(window).width() <= 1199) {
-      $navSide.css('right', '-30%');
+
+      $navSide.removeClass('show-menu-md-sm');
     } else if ($(window).width() < 768) {
-      $navSide.css('right', '-40%');
+
+      $navSide.removeClass('show-menu-xs');
     } else {
-      $navSide.css('right', '-15%');
+      
+      $navSide.removeClass('show-menu-lg');
     }
 
     /*----------  Return whole-page to default value  ----------*/
-    $('.whole-page').css('left', '0');
-
+    $('.whole-page').removeClass('move-page-lg,move-page-md-sm,move-page-xs');
   }, { offset: '35%' });
 }
 waypointOnScroll();
 
 /*=====  End of Add props on sidebar menu when scroll  ======*/
+
+
+/*========================================
+=          Add back to top button        =
+==========================================*/
+
+function addBackToTopBtn() {
+
+  $('.box-features-section').waypoint(function() {
+
+    $('.back-to-top').toggleClass('arrow-to-top');
+
+  });
+}
+addBackToTopBtn();
+
+/*=====  End of Add back to top button  ======*/

@@ -1,8 +1,6 @@
-//--Adding new margins and paddings on different resolution to be consistent--//
-
-//on lg place iphone white img and associate divs correctly (design section) //1
-//on lg width of input in form must be bigger (faq section)                  //2
-//on lg screen place clients images correctly (header)                       //3
+//on lg put iphone white img and associate divs correctly (design section) //1
+//on lg width of input in form must be bigger (faq section) //2
+//on lg screen put clients images correctly (header) //3
 @media screen and (min-width: 1200px) {
   .style-desc-text-icon-design-section {
     margin-top: 180px; //1
@@ -21,15 +19,15 @@
     }
   }
 }
-//On lg put iphone white img and associate divs correctly (design section) //4
+//on md put iphone white img and associate divs correctly (design section) //4
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper-design-cols {
     margin-top: 100px; //4
   }
 }
-//on md & lg place main heading & text on center (header)                    //5
-//on md & lg place para below h2 in sections must be properly align          //6
-//on md & lg header img must be placed & positioned correctly                //7
+//on md & lg put main heading & text on center (header)                    //5
+//on md & lg put para below h2 in sections must be properly align          //6
+//on md & lg header img must be puted & positioned correctly                //7
 @media screen and (min-width: 992px) {
   .main-heading-and-info-text {
     margin-top: 45%;            //5
@@ -45,7 +43,7 @@
   }
 }
 //on sm lower the width of input in form (faq section)                       //8
-//on sm header img must be placed & positioned correctly                     //9
+//on sm header img must be puted & positioned correctly                     //9
 //on sm reset body padding, because of the footer                           //10
 //on sm footer is in normal document flow                                   //11
 //on sm img white iphone need to be centered on page                        //12
@@ -90,7 +88,7 @@
 //on xs main heading (h1) must have smaller font and line-height            //17
 //on xs headings section (h2) must have smaller font and line-height        //18
 //on xs price tags don't have transform ability                             //19
-//on xs header img must be placed & positioned correctly                    //20
+//on xs header img must be puted & positioned correctly                    //20
 //on xs img white iphone need to be centered on page                        //21
 //on xs accordion heading must have smaller font-size and line-height       //22
 //on xs footer is in normal document flow                                   //23
@@ -194,11 +192,11 @@
     margin: 0; /**/
   }
   ul.list-unstyled.sidebar li {
-    margin: 18px 0px 0 15px;/**/
+    margin: 10px 0px 0 15px;/**/
   }
       
 }
-//On 512px screen divs in benefits must be placed & positioned correctly /*19*/
+//On 512px screen divs in benefits must be puted & positioned correctly /*19*/
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
     margin-top: 14px; /*19*/  

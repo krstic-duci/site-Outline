@@ -8,7 +8,7 @@
 
 //must set body padding-bottom to 584px so footer can be seen nicely
 body {
-  @include marg(0 0 584px 0);
+  @include marg(0 0 $body-marg-footer-heights 0);
   overflow-x: hidden;
 }
 .whole-page {
@@ -58,7 +58,6 @@ body {
   @include borders($border-width-ft-pdcs-section, $color-border-ft-pdcs-section);
   @include pad(145px 0 115px 0);
   background-color: $color-bg-ft-pdcs-faqs-section;
-  z-index: 1;
 }
 .wrapper-divs-features>div, .wrapper-divs-products>div {
 
@@ -135,7 +134,6 @@ body {
 .bg-img-outline-app {
   @include pad(145px 0);
   background-color: $color-bg-wrapper-divs-ft-pric-faqs;
-  z-index: 1;
 }
 .style-desc-text-icon-design-section, .style-desc-text-icon-benefits-section {
   
@@ -182,7 +180,6 @@ body {
   @include pad(120px 0);
   background: url('../images/bg-img/bg_2.jpg') no-repeat;
   background-attachment: fixed;
-  z-index: 1;
 }
 .wrapper-count-numbers {
   color: $color-font-btn-hdng-para-num;
@@ -204,7 +201,6 @@ body {
 .box-pricing-section {
   @include pad(145px 0 200px 0);
   background-color: $color-bg-wrapper-divs-ft-pric-faqs;
-  z-index: 1;
 }
 .container-pricing {
   @include pad(48px 0);
@@ -243,8 +239,7 @@ body {
   @include marg(21px 0 0 0);
   @include box-shadows(0 0 20px 5px rgba(0, 0, 0, 0.3));
   @include border-radius(4px 4px 0 0);
-  border-top: $border-width-pric-section solid 
-  $color-btns-font-awesome-pric-nums;
+  border-top: $border-width-pric-section solid$color-btns-font-awesome-pric-nums;
 
   &:hover {
     @include transforms(translate(0, 0));
@@ -254,7 +249,6 @@ body {
 
 .box-faqs-section {
   background-color: $color-bg-ft-pdcs-faqs-section;
-  z-index: 1;
 }
 .form-inside-faqs {
   @include pad(60px 0);

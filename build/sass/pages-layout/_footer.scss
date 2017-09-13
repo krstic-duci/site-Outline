@@ -9,7 +9,7 @@ footer {
   width: 100%;
   z-index: -1;
   bottom: 0;
-  height: 584px;
+  height: $body-marg-footer-heights;
   font-family: $ff-opensans-light;
   background-color: $color-bg-wrapper-footer;
 
@@ -42,13 +42,4 @@ ul.list-unstyled {
 .copyright-text {
   @include marg(20px 0);
   color: $color-font-btn-hdng-para-num;
-}
-.back-to-top {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-
-  i {
-    color: #4fd2c2;
-  }
 }

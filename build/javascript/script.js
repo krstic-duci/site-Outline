@@ -145,7 +145,9 @@ $(function() {
     /*----------  When user click on Menu anchor tag
         sidemenu nav appear and pushes the whole page to the left  ----------*/
     $('.menu-button').click(function(e) {
-      e.stopPropagation();
+
+      // Change icon of menu button on click
+      $(this).find('i').toggleClass('fa fa-bars fa fa-times');
 
       if ($width >= 768 && $width <= 1199) {
 
@@ -161,14 +163,6 @@ $(function() {
         $wholePage.toggleClass('move-page-lg');
       }
     });
-
-    /*----------  When user click anywhere on whole page
-                       close the side menu nav  ----------*/
-
-    $('.whole-page').click(function() {
-
-    });
-
   }
   setNavOnOff();
 
@@ -231,5 +225,5 @@ $(function() {
   smoothScroll();
 
   /*=====  End of Smooth Scroll  ======*/
-  
+
 });

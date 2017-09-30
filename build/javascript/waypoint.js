@@ -64,25 +64,33 @@ function waypointOnScroll() {
   /*----------  Call Waypoint JS on user scroll  ----------*/
   $('.wrapper-clients-images-header').waypoint(function() {
 
-    var $navSide = $('.navigation-vertical');
+    var $navSideDefault = $('.navigation-vertical');
+    var $wholePageDefault = $('.whole-page');
 
     /*--  When user scroll to clients image give 
           sidebar menu and whole-page new vals   --*/
     if ($(window).width() >= 768 && $(window).width() <= 1199) {
 
-      $navSide.removeClass('show-menu-md-sm');
+      $navSideDefault.removeClass('show-menu-md-sm');
     } else if ($(window).width() < 768) {
 
-      $navSide.removeClass('show-menu-xs');
+      $navSideDefault.removeClass('show-menu-xs');
     } else {
       
-      $navSide.removeClass('show-menu-lg');
+      $navSideDefault.removeClass('show-menu-lg');
     }
 
-    /*----------  Return whole-page to default value  ----------*/
-    $('.whole-page').removeClass('move-page-lg,move-page-md-sm,move-page-xs');
-  }, { offset: '35%' });
-}
+   /*----------  Return whole-page to default value  ----------*/
+   $wholePageDefault.removeClass('move-page-xs');
+   $wholePageDefault.removeClass('move-page-md-sm');
+   $wholePageDefault.removeClass('move-page-lg');
+   $('.menu-button').find('i').removeClass('fa fa-times');
+   $('.menu-button').find('i').addClass('fa fa-bars');
+   
+   }, { offset: '35%' });
+
+
+  }
 waypointOnScroll();
 
 /*=====  End of Add props on sidebar menu when scroll  ======*/

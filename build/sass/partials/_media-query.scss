@@ -1,6 +1,6 @@
 //on lg put iphone white img and associate divs correctly (design section) //1
-//on lg width of input in form must be bigger (faq section) //2
-//on lg screen put clients images correctly (header) //3
+//on lg width of input in form must be bigger (faq section)                //2
+//on lg screen put clients images correctly (header)                       //3
 @media screen and (min-width: 1200px) {
   .style-desc-text-icon-design-section {
     margin-top: 180px; //1
@@ -27,7 +27,7 @@
 }
 //on md & lg put main heading & text on center (header)                    //5
 //on md & lg put para below h2 in sections must be properly align          //6
-//on md & lg header img must be puted & positioned correctly                //7
+//on md & lg header img must be puted & positioned correctly               //7
 @media screen and (min-width: 992px) {
   .main-heading-and-info-text {
     margin-top: 45%;            //5
@@ -42,12 +42,13 @@
     bottom: -140px;             //7
   }
 }
-//on sm lower the width of input in form (faq section)                       //8
-//on sm header img must be puted & positioned correctly                     //9
-//on sm reset body padding, because of the footer                           //10
-//on sm footer is in normal document flow                                   //11
-//on sm img white iphone need to be centered on page                        //12
-//
+//on sm lower the width of input in form (faq section)                     //8
+//on sm header img must be puted & positioned correctly                    //9
+//on sm reset body padding, because of the footer                          //10
+//on sm footer is in normal document flow                                  //11
+//on sm img white iphone need to be centered on page                       //12
+//on sm clients img must be placed correctly on screen size                //13
+//on sm body must have margin: 0                                           //14
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form-inline .form-group .form-control  {
     width: 90%;                //8
@@ -74,36 +75,39 @@
     }
   }
   .company-img {
-    margin-bottom: 20px;  /**/
-    display: inline-block !important;/**/
+    margin-bottom: 20px;      //13
+    display: inline-block !important; //13
   }
   body {
-    margin: 0; /**/
+    margin: 0;                //14
   }
 }
-//on xs font and line height inside carousel must be smaller                //13
-//on xs img inside carousel must have smaller width and height              //14
-//on xs h2 inside outline app must have smaller font and line-height        //15
-//on xs para inside outline app must bre properly aligned                   //16
-//on xs main heading (h1) must have smaller font and line-height            //17
-//on xs headings section (h2) must have smaller font and line-height        //18
-//on xs price tags don't have transform ability                             //19
-//on xs header img must be puted & positioned correctly                    //20
-//on xs img white iphone need to be centered on page                        //21
-//on xs accordion heading must have smaller font-size and line-height       //22
-//on xs footer is in normal document flow                                   //23
-//on xs all sections & footer must have smaller padding and margin          //24
-//
+//on xs font and line height inside carousel must be smaller               //15
+//on xs img inside carousel must have smaller width and height             //16
+//on xs h2 inside outline app make smaller font,line-height & margin       //17
+//on xs para inside outline app must bre properly aligned                  //18
+//on xs main heading (h1) must have smaller font and line-height           //19
+//on xs headings section (h2) must have smaller font and line-height       //20
+//on xs price tags don't have transform ability                            //21
+//on xs header img must be puted & positioned correctly                    //22
+//on xs img white iphone need to be centered on page                       //23
+//on xs accordion heading must have smaller font-size and line-height      //24
+//on xs footer is in normal document flow                                  //25
+//on xs all sections & footer must have smaller padding and margin         //26
+//on xs clients img must be placed correctly on screen size                //27
+//on xs body must have margin:0                                            //28
+//on xs lower the margin of nav sidebar                                    //29
+//on xs fix the nav sidebar                                                //30
 @media screen and (max-width: 767px) {
   .carousel-para-text {
-    font-size: 20px;                      //13
-    line-height: 35px;                    //13
+    font-size: 20px;                      //15
+    line-height: 35px;                    //15
   }
   .carousel-inner {
 
   img {
-      height: 130px;                      //14
-      width: 130px;                       //14
+      height: 130px;                      //16
+      width: 130px;                       //16
     }
   }
 
@@ -112,99 +116,101 @@
     .sections-heading-and-intro-text {
 
       h2 {
-        font-size: 35px;                  //15
-        line-height: 53px;                //15
-        margin: 0 10px;                   //16
+        font-size: 35px;                  //17
+        line-height: 53px;                //17
+        margin: 0 10px;                   //18
       }
     }
   }
   .main-heading-and-info-text {
 
     h1 {
-      font-size: 40px;                    //17
-      line-height: 40px;                  //17
+      font-size: 40px;                    //19
+      line-height: 40px;                  //19
     }
   }
 
   .sections-heading-and-intro-text {
 
     h2 { 
-      font-size: 35px;                    //18
-      line-height: 50px;                  //18
+      font-size: 35px;                    //20
+      line-height: 50px;                  //20
     }
   }
   .container-pricing {
 
     &:hover {
-      -webkit-transform: translate(0, 0); //19
-         -moz-transform: translate(0, 0); //19
-          -ms-transform: translate(0, 0); //19
-           -o-transform: translate(0, 0); //19
-              transform: translate(0, 0); //19
+      -webkit-transform: translate(0, 0); //21
+         -moz-transform: translate(0, 0); //21
+          -ms-transform: translate(0, 0); //21
+           -o-transform: translate(0, 0); //21
+              transform: translate(0, 0); //21
     }
   }
   .iphones-over-header-img {
-    margin-top: -100px;                   //20
-    bottom: -140px;                       //20
+    margin-top: -100px;                   //22
+    bottom: -140px;                       //22
   }
   .style-img-design-section {
     img {
-      margin: 0 auto;                     //21
+      margin: 0 auto;                     //23
     }
   }
   .panel.panel-default .panel-heading {
 
     a {
-      font-size: 20px;                    //22           
-      line-height: 30px;                  //22
-      text-decoration: none;              //22
+      font-size: 20px;                    //24           
+      line-height: 30px;                  //24
+      text-decoration: none;              //24
     }
   }
   body {
-    padding: 0;                           //23
+    padding: 0;                           //25
   }
   footer {
-    bottom: 0;                            //23
-    height: auto;                         //23
-    margin-top: -80px;                    //23
-    padding: 50px 0;                      //23
-    position: static;                     //23
-    width: 100%;                          //23
-    z-index: 1;                           //23
+    bottom: 0;                            //25
+    height: auto;                         //25
+    margin-top: -80px;                    //25
+    padding: 50px 0;                      //25
+    position: static;                     //25
+    width: 100%;                          //25
+    z-index: 1;                           //25
   }
-  .box-testimonies-section {              //24
+  .box-testimonies-section {              //26
     margin-bottom: -80px;                                     
   }
   .box-heading-and-desc-text-benefits-section, 
   .wrapper-accordion-and-faqs-section {
-    padding: 0 0 80px 0;                  //24
+    padding: 0 0 80px 0;                  //26
   }
   .box-features-section, .box-design-section, .box-testimonies-section,
   .box-products-section, .box-benefits-section,.box-pricing-section, 
   .box-faqs-section {
-    padding: 80px 0;                      //24
+    padding: 80px 0;                      //26
   }
   .company-img {
-    margin-bottom: 30px;  /**/
-    display: inline-block !important;/**/
+    margin-bottom: 30px;                  //27
+    display: inline-block !important;     //27
   }
   body {
-    margin: 0; /**/
+    margin: 0;                            //28
   }
   ul.list-unstyled.sidebar li {
-    margin: 10px 0px 0 15px;/**/
+    margin: 10px 0px 0 5px;              //29
   }
-      
+  .icons-side-menu {
+    @include marg(-10px 0 0 -5px);       //30
+  }   
 }
-//On 512px screen divs in benefits must be puted & positioned correctly /*19*/
+//on 512px screen divs in benefits must be puted & positioned correctly   //31
 @media screen and (min-width: 480px) and (max-width: 512px) {
   #style-i-on-xs {
-    margin-top: 14px; /*19*/  
+    margin-top: 14px;                    //31  
   }
 }
-// on screen < 480px img in carousel must be in new row
+// on screen < 480px img in carousel must be in new row                   //32
 @media screen and (max-width: 480px) {
   .carousel-inner img.img-responsive.img-circle {
-    margin: 10px auto;
+    margin: 10px auto;                   //32
   }
 }

@@ -26,7 +26,7 @@ body {
     @include paragraphs($ff-opensans-regular, $para-intro-text-fs, 
     $color-font-para, $para-intro-text-lh, null);
     // must place margin-bottom of 50px here because of media-query
-    // look in media-query line 7 and 12
+    // look in media-query line 4
     margin-bottom: 50px;
   }
 }

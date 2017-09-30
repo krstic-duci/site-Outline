@@ -20,10 +20,10 @@
   @include transitions(all 0.7s linear);
   right: 0 !important;
   width: 15% !important;
-}
+} 
 .move-page-lg {
-  @include transitions(all 0.6s linear);
   left: -15% !important;
+  @include transitions(all 0.6s linear);
 }
 .show-menu-md-sm {
   @include transitions(all 0.7s linear);
@@ -31,8 +31,8 @@
   width: 30% !important;
 }
 .move-page-md-sm {
-  @include transitions(all 0.6s linear);
   left: -30% !important;
+  @include transitions(all 0.6s linear);
 }
 .show-menu-xs {
   @include transitions(all 0.7s linear);
@@ -40,8 +40,8 @@
   width: 40% !important;
 }
 .move-page-xs {
-  @include transitions(all 0.6s linear);
   left: -40% !important;
+  @include transitions(all 0.6s linear);
 }
 .navigation-top {
   @include marg(40px 0);
@@ -75,11 +75,9 @@
 
 ul.list-unstyled.sidebar {
 
-  hr {
-    @include marg(5px);
-  }
   li {
     @include marg(40px 0 0 15px);
+    border-bottom: 1px solid $color-font-sidemenu-nav;
   }
 
   a {
@@ -97,6 +95,7 @@ ul.list-unstyled.sidebar {
   transition: all 1s linear;
 }
 .icons-side-menu {
+  @include marg(-10px 0 0 0);
 
   .text-in-side-menu {
     @include marg(10px);

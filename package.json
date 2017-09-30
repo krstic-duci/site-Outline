@@ -1,0 +1,28 @@
+{
+  "name": "site-outline",
+  "version": "1.0.0",
+  "description": "site for and app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krstic-duci/site-Outline.git"
+  },
+  "author": "el_duche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krstic-duci/site-Outline/issues"
+  },
+  "homepage": "https://github.com/krstic-duci/site-Outline#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

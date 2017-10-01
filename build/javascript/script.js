@@ -7,7 +7,7 @@ $(function() {
   /*----------  When the page loads make new
                 breakpoints if res < 480px  ----------*/
 
-  function breakpointsOnPageLoad() {
+  function breakpoints() {
 
     if ($(window).width() < 463) {
 
@@ -32,38 +32,7 @@ $(function() {
     }
   }
 
-  /*----------  When user resize the browser make 
-                new breakpoints if res < 480px  ----------*/
-  function breakpointsOnPageResize() {
-
-    $(window).resize(function() {
-
-      if ($(window).width() < 463) {
-
-        // section divs (features, designs, products)
-        $('.custom-col-xxs').removeClass('col-xs-6').addClass('col-xs-12');
-
-        // carousel img and para
-        $('.custom-col-crls-xxs')
-          .removeClass('col-xs-4').addClass('col-xs-12');
-        $('.custom-col-crls-para-xxs')
-          .removeClass('col-xs-8').addClass('col-xs-12');
-      } else {
-
-        // section divs (features, designs, products)
-        $('.custom-col-xxs').removeClass('col-xs-12').addClass('col-xs-6');
-
-        // carousel img and para
-        $('.custom-col-crls-xxs')
-          .removeClass('col-xs-12').addClass('col-xs-4');
-        $('.custom-col-crls-para-xxs')
-          .removeClass('col-xs-12').addClass('col-xs-8');
-      }
-    });
-  }
-
-  breakpointsOnPageLoad();
-  breakpointsOnPageResize();
+  breakpoints();
 
   /*=====  End of Make new Breakpoint on 480px   ======*/
 
@@ -227,3 +196,15 @@ $(function() {
   /*=====  End of Smooth Scroll  ======*/
 
 });
+
+
+
+/*=============================================================
+=            On window resize make new breakpoints            =
+=============================================================*/
+
+$(window).resize(function() {
+  breakpoints();
+});
+
+/*=====  End of On window resize make new breakpoints  ======*/

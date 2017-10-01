@@ -149,7 +149,7 @@ body {
 }
 // Benefits section
 .bg-img-outline-app {
-  background: url('../images/bg-img/bg_3.jpg');
+  background: url('../../build/images/bg-img/bg_3.jpg');
   background-attachment: fixed;
 
   .sections-heading-and-intro-text {
@@ -178,7 +178,7 @@ body {
 
 .wrapper-numbers-and-bg-img {
   @include pad(120px 0);
-  background: url('../images/bg-img/bg_2.jpg') no-repeat;
+  background: url('../../build/images/bg-img/bg_2.jpg') no-repeat;
   background-attachment: fixed;
 }
 .wrapper-count-numbers {

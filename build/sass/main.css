@@ -5,23 +5,23 @@
  ________________________________________________________________*/
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url("../fonts/montserrat/Montserrat-Regular.ttf"); }
+  src: url("../../build/fonts/montserrat/Montserrat-Regular.ttf"); }
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url("../fonts/montserrat/Montserrat-Bold.ttf"); }
+  src: url("../../build/fonts/montserrat/Montserrat-Bold.ttf"); }
 @font-face {
   font-family: 'Montserrat-Light';
-  src: url("../fonts/montserrat/Montserrat-Light.ttf"); }
+  src: url("../../build/fonts/montserrat/Montserrat-Light.ttf"); }
 /**
  *Copyright 2017 Steve Matteson (https://twitter.com/@SteveMatteson1)
  * Open Sans
  ________________________________________________________________*/
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf"); }
+  src: url("../../build/fonts/open-sans/OpenSans-Regular.ttf"); }
 @font-face {
   font-family: 'OpenSans-Light';
-  src: url("../fonts/open-sans/OpenSans-Light.ttf"); }
+  src: url("../../build/fonts/open-sans/OpenSans-Light.ttf"); }
 /*----------  Typography & Colors  ----------*/
 /*-----------------  Mixins   ---------------*/
 /*-----------------  Utility  ---------------*/
@@ -406,7 +406,7 @@ ul.list-unstyled.sidebar a {
       color: #30beac; }
 
 .header-bg-img {
-  background: url("../images/bg-img/bg_1.jpg");
+  background: url("../../build/images/bg-img/bg_1.jpg");
   background-size: cover;
   z-index: 1; }
 
@@ -585,8 +585,9 @@ body {
   margin: 0 0 15px 0; }
 
 .bg-img-outline-app {
-  background: url("../images/bg-img/bg_3.jpg");
-  background-attachment: fixed; }
+  background: url("../../build/images/bg-img/bg_3.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
   .bg-img-outline-app .sections-heading-and-intro-text h2 {
     color: #ffffff;
     margin: -20px 0 0 0; }
@@ -602,8 +603,9 @@ body {
 
 .wrapper-numbers-and-bg-img {
   padding: 120px 0;
-  background: url("../images/bg-img/bg_2.jpg") no-repeat;
-  background-attachment: fixed; }
+  background: url("../../build/images/bg-img/bg_2.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .wrapper-count-numbers {
   color: #ffffff;

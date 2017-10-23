@@ -151,6 +151,7 @@ body {
 .bg-img-outline-app {
   background: url('../../build/images/bg-img/bg_3.jpg');
   background-attachment: fixed;
+  background-size: cover;
 
   .sections-heading-and-intro-text {
 
@@ -180,6 +181,7 @@ body {
   @include pad(120px 0);
   background: url('../../build/images/bg-img/bg_2.jpg') no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 .wrapper-count-numbers {
   color: $color-font-btn-hdng-para-num;

@@ -1,8 +1,8 @@
 $(function() {
 
-  /*=============================================
-  =       Make new Breakpoint on 480px           =
-  =============================================*/
+/*=============================================
+=       Make new Breakpoint on 480px           =
+=============================================*/
 
   /*----------  When the page loads make new
                 breakpoints if res < 480px  ----------*/
@@ -34,12 +34,23 @@ $(function() {
 
   breakpoints();
 
-  /*=====  End of Make new Breakpoint on 480px   ======*/
+/*=====  End of Make new Breakpoint on 480px   ======*/
 
 
-  /*=================================================
-  =       Inital (default) state in accordion       =
-  =================================================*/
+/*=============================================================
+=            On window resize make new breakpoints            =
+=============================================================*/
+
+$(window).resize(function() {
+  breakpoints();
+});
+
+/*=====  End of On window resize make new breakpoints  ======*/
+
+
+/*=================================================
+=       Inital (default) state in accordion       =
+=================================================*/
 
   function defaultStateAccordion() {
 
@@ -51,12 +62,12 @@ $(function() {
   }
   defaultStateAccordion();
 
-  /*=== End of Inital (default) state in accordion ====*/
+/*=== End of Inital (default) state in accordion ====*/
 
 
-  /*=============================================
-  =       Set color to open/close accordion          =
-  =============================================*/
+/*=============================================
+=       Set color to open/close accordion          =
+=============================================*/
 
   function openCloseAccordion() {
 
@@ -98,12 +109,12 @@ $(function() {
   }
   openCloseAccordion();
 
-  /*=====  End of Set color to open/close accordion  ======*/
+/*=====  End of Set color to open/close accordion  ======*/
 
 
-  /*==============================================
-  =            Proper load of sidebar nav            =
-  ==============================================*/
+/*==============================================
+=            Proper load of sidebar nav            =
+==============================================*/
 
   function setNavOnOff() {
 
@@ -135,23 +146,23 @@ $(function() {
   }
   setNavOnOff();
 
-  /*=====  End of Proper load of sidebar nav  ======*/
+/*=====  End of Proper load of sidebar nav  ======*/
 
 
-  /*=========================================
-  =            Animate on Scroll            =
-  =========================================*/
+/*=========================================
+=            Animate on Scroll            =
+=========================================*/
 
   AOS.init({
     once: true
   });
 
-  /*=====  End of Animate on Scroll  ======*/
+/*=====  End of Animate on Scroll  ======*/
 
 
-  /*=========================================
-  =            Smooth Scroll            =
-  =========================================*/
+/*=========================================
+=            Smooth Scroll            =
+=========================================*/
 
   function smoothScroll() {
 
@@ -193,18 +204,6 @@ $(function() {
   }
   smoothScroll();
 
-  /*=====  End of Smooth Scroll  ======*/
+/*=====  End of Smooth Scroll  ======*/
 
 });
-
-
-
-/*=============================================================
-=            On window resize make new breakpoints            =
-=============================================================*/
-
-$(window).resize(function() {
-  breakpoints();
-});
-
-/*=====  End of On window resize make new breakpoints  ======*/

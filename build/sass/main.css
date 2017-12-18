@@ -697,6 +697,8 @@ body {
   .form-inline .form-group .form-control:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
 
+/*--------- Support image scrolling in IE ---------*/
+/*Edge*/
 footer {
   padding: 180px 0 200px 0;
   position: fixed;

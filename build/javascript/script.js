@@ -202,8 +202,9 @@ $(window).resize(function() {
         }
       });
   }
-  smoothScroll();
+  // smoothScroll();
 
 /*=====  End of Smooth Scroll  ======*/
+
 
 });

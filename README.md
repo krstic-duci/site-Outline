@@ -5,6 +5,7 @@
 ## Technologies used:
 * HTML5
 * CSS3
+* SASS
 * Javascript
 * [Bootstrap v.3.3.7](https://getbootstrap.com/docs/3.3/)
 * [jQuery v.3.2.1](https://jquery.com/)
